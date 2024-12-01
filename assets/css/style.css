@@ -188,3 +188,16 @@ color: var(--gray-scale-white);
 top: 0;
 right: 0
 }
+#middleBarMobile span{
+    font-size: 20px;
+}
+#bottomNavMenu{
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    position: fixed;
+    bottom: 0;
+    height: 70px;
+    width: 100%;
+}
+#bottomNavMenu p{
+    font-size: 14px;
+}
