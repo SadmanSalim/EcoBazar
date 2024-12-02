@@ -211,7 +211,7 @@ right: 0
     border: 1px solid var(--gray-scale-gray-–-300);
     width: 60%;
     height: 5%;
-    border-radius: 5px;
+    border-radius: 6px 0 0 6px;
     padding-left: 5%;
     transform: translateX(100%);
     font-family: var(--font-family);
@@ -221,9 +221,29 @@ line-height: 140%;
 color: var(--gray-scale-gray-–-500);
     transition: 0.3s ease;
 }
+.searchBoxMobile button{
+    position: fixed;
+    top: 15%;
+    left: 75%;
+    background: var(--branding-success);
+    border-radius: 0 6px 6px 0;
+    font-family: var(--font-family);
+font-weight: 600;
+font-size: 14px;
+line-height: 120%;
+color: var(--gray-scale-white);
+border: none;
+outline: none;
+height: 5%;
+transform: translateX(200%);
+transition: 0.3s ease;
+}
+.searchBoxMobile button.active{
+    transform: translateX(0%);
+}
 .searchBoxMobile input.active{
     transform: translateX(0%);
-    left: 20%;
+    left: 15%;
 }
 .background{
     position: absolute;
