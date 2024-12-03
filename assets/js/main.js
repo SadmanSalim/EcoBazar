@@ -40,7 +40,6 @@ $(document).ready(function () {
   } else {
     iconElement.attr('icon', 'ep:arrow-down-bold');
   }
-
   $('.pasToggl').click(function () {
     // Find the input field within the same parent container as the clicked icon
     var inputField = $(this).siblings('input');
