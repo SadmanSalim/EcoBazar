@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EcoBazar</title>
+    <link rel="shortcut icon" href="./assets/img/fav.png" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic" rel="stylesheet" />
+    <script src="https://code.iconify.design/iconify-icon/2.1.0/iconify-icon.min.js"></script>
+    <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/responsive.css">
+</head>
+<body>
+    <header>
+        <!-- *Top Bar Section start -->
+        <section id="topBar">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-6 col d-flex align-items-center justify-content-lg-start justify-content-center location">
+                        <iconify-icon icon="fluent:location-20-regular"></iconify-icon>
+                        <p>Store Location: Lincoln- 344, Illinois, Chicago, USA</p>
+                    </div>
+                    <div class="col-lg-6 d-lg-flex d-none align-items-center justify-content-end quickActions">
+                        <form action="">
+                            <select>
+                                <option>Eng</option>
+                                <option>Bn</option>
+                                <option>Hin</option>
+                            </select>
+                            <select>
+                                <option>Usd</option>
+                                <option>Bdt</option>
+                                <option>Rp</option>
+                            </select>
+                        </form>
+                        <a href="#">Sign In / Sign Up</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- *Top Bar Section end -->
+
+        <!-- *Middle Bar Section Desktop start -->
+        <section id="middleBar" class="d-none d-lg-block">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-3">
+                        <div class="logo">
+                            <a href="index.html"><img class="img-fluid" src="./assets/img/Logo.png"></a>
+                        </div>
+                    </div>
+                    <div class="col-6 d-flex align-items-center">
+                        <div class="searchBoxLg">
+                            <iconify-icon icon="cuida:search-outline"></iconify-icon>
+                            <input type="search" placeholder="Search">
+                        </div>
+                        <button class="searchBtn" type="button">Search</button>
+                    </div>
+                    <div class="col-3 d-flex align-items-center justify-content-end actionLinks">
+                         <iconify-icon icon="solar:heart-outline"></iconify-icon>
+                         <!-- *Cart Icon added with sideBar -->
+                         
+                         <div class="cartIcon">
+                             <button type="button" data-bs-toggle="offcanvas" data-bs-target="#cartSideBar" aria-controls="offcanvasWithBothOptions">
+                                 <iconify-icon icon="lets-icons:bag-alt"></iconify-icon>
+                                 <div class="quantity">2</div>
+                             </button>
+                         </div>
+
+
+                         <!-- *Cart Icon added with sideBar -->
+                         <div class="paymentDetails">
+                            <p>Shopping cart:</p>
+                            <h5>$57.00</h5>
+                         </div>
+                    </div>
+                </div>
+            </div>
+            <!-- *Cart Sidebar Start -->
+            <div class="offcanvas offcanvas-end" data-bs-scroll="true" tabindex="-1" id="cartSideBar" aria-labelledby="offcanvasWithBothOptionsLabel">
+                <div class="offcanvas-header">
+                  <h5 class="offcanvas-title" id="offcanvasWithBothOptionsLabel">Shopping Card (2)</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <div class="row align-items-center product">
+                        <div class="col-5"><img class="img-fluid" src="./assets/img/product.png" alt=""></div>
+                        <div class="col-6">
+                            <h6>Fresh Indian Orange</h6>
+                            <p>1 kg x <span>12.00</span></p>
+                        </div>
+                        <div class="col-1">
+                            <iconify-icon icon="charm:cross"></iconify-icon>
+                        </div>
+                    </div>
+                    <div class="row align-items-center product">
+                        <div class="col-5"><img class="img-fluid" src="./assets/img/product_1.png" alt=""></div>
+                        <div class="col-6">
+                            <h6>Green Apple</h6>
+                            <p>1 kg x <span>14.00</span></p>
+                        </div>
+                        <div class="col-1">
+                            <iconify-icon icon="charm:cross"></iconify-icon>
+                        </div>
+                    </div>
+                </div>
+              </div>
+
+            <!-- *Cart Sidebar End -->
+        </section>
+        <!-- *Middle Bar Section Desktop end -->
+
+        <!-- *Middle Bar Section Mobile start -->
+        <section id="middleBarSm" class="">
+            <div class="container">
+                <div class="row align-items-center">
+                    <!-- *Menu Sidebar Start-->
+                    <div class="col-3">
+                        <button type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasScrolling" aria-controls="offcanvasScrolling">
+                            <iconify-icon icon="gg:menu-left-alt"></iconify-icon>
+                        </button>
+                    </div>
+                    <!-- *Menu Sidebar End-->
+                    <div class="col-6 d-flex justify-content-center">
+                        <div class="logo">
+                            <a href="index.html"><img src="./assets/img/Logo.png" alt=""></a>
+                        </div>
+                    </div>
+                    <div class="col-3 text-end">
+                        <iconify-icon icon="cuida:search-outline"></iconify-icon>
+                    </div>
+                </div>
+            </div>
+
+            <!-- *Menu sidebar body start -->
+            <div class="offcanvas offcanvas-start" data-bs-scroll="true" data-bs-backdrop="false" tabindex="-1" id="offcanvasScrolling" aria-labelledby="offcanvasScrollingLabel">
+                <div class="offcanvas-header">
+                  <h5 class="offcanvas-title" id="offcanvasScrollingLabel"><img class="img-fluid" src="./assets/img/Logo.png" alt=""></h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body text-start menuSide">
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li class="shopCollapse">
+                            <div class="row align-items-center">
+                                <div class="col-6"><a href="#">Shop</a></div>
+                                <div class="col-6 text-end">
+                                    <iconify-icon icon="ep:arrow-right-bold"></iconify-icon>
+                                </div>
+                            </div>
+                            <ul class="shopOpen">
+                                <li><a href="#">Food</a></li>
+                                <li><a href="#">Baby Food & Care</a></li>
+                                <li><a href="#">Home Cleaning</a></li>
+                                <li><a href="#">Beauty & Health</a></li>
+                                <li><a href="#">Fashion & Lifestyle</a></li>
+                                <li><a href="#">Home & Kitchen</a></li>
+                                <li><a href="#">Stationeries</a></li>
+                            </ul>
+                        </li>
+                        <li class="shopCollapse">
+                            <div class="row">
+                                <div class="col-6"><a href="#">Pages</a></div>
+                                <div class="col-6 text-end">
+                                    <iconify-icon icon="ep:arrow-right-bold"></iconify-icon>
+                                </div>
+                            </div>
+                            <ul class="shopOpen">
+                                <li><a href="#">24/7 Support</a></li>
+                                <li><a href="#">Privacy Policy</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                    </ul>
+                </div>
+              </div>
+            <!-- *Menu sidebar body End -->
+        </section>
+        <!-- *Middle Bar Section Mobile end -->
+    </header>
+
+
+    <script src="./assets/js/bootstrap.bundle.min.js"></script>
+    <script src="./assets/js/jquery-3.7.1.min.js"></script>
+    <script src="./assets/js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,302 @@
+* {
+    box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+a,
+span,
+ul,
+ol {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul,
+ol {
+    list-style: none;
+}
+
+iconify-icon {
+    line-height: 0 !important;
+}
+
+:root {
+    --gren-gray-scale-900: #002603;
+    --gren-gray-scale-800: #173b1a;
+    --gren-gray-scale-700: #2b572e;
+    --gren-gray-scale-600: #406b42;
+    --gren-gray-scale-500: #618062;
+    --gren-gray-scale-400: #7a997c;
+    --gren-gray-scale-300: #96b297;
+    --gren-gray-scale-200: #b4ccb4;
+    --gren-gray-scale-100: #dae5da;
+    --gren-gray-scale-50: #edf2ee;
+    --gray-scale-gray-–-900: #1a1a1a;
+    --gray-scale-gray-–-800: #333;
+    --gray-scale-gray-–-700: #4d4d4d;
+    --gray-scale-gray-–-600: #666;
+    --gray-scale-gray-–-500: #808080;
+    --gray-scale-gray-–-400: #999;
+    --gray-scale-gray-–-300: #b3b3b3;
+    --gray-scale-gray-–-200: #ccc;
+    --gray-scale-gray-–-100: #e6e6e6;
+    --gray-scale-gray-–-50: #f2f2f2;
+    --gray-scale-white: #fff;
+    --branding-success-bright: #84d187;
+    --branding-success: #00b207;
+    --branding-success-dark: #2c742f;
+    --branding-warning: #ff8a00;
+    --branding-error: #ea4b48;
+    --font-family: "Poppins", sans-serif;
+}
+
+/* *Top Bar Start */
+#topBar {
+    background: var(--gray-scale-gray-–-800);
+    padding: 12px 0;
+}
+
+#topBar .location iconify-icon {
+    color: var(--gray-scale-gray-–-300);
+    font-size: 20px;
+}
+
+#topBar .location p {
+    color: var(--gray-scale-gray-–-300);
+    font-size: 12px;
+    margin-left: 5px;
+}
+
+#topBar .quickActions select {
+    background: transparent;
+    border: none;
+    outline: none;
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 12px;
+    text-align: center;
+    color: var(--gray-scale-gray-–-300);
+    cursor: pointer;
+}
+
+#topBar .quickActions select:last-child {
+    margin: 0 10px;
+}
+
+#topBar .quickActions a {
+    border-left: 1px solid rgba(255, 255, 255, 0.1);
+    padding: 0 10px;
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 12px;
+    color: var(--gray-scale-gray-–-300);
+}
+
+/* *Top Bar End */
+
+/* *Middle Bar Desktop Start */
+#middleBar {
+    padding: 24px;
+}
+
+#middleBar .searchBoxLg {
+    position: relative;
+}
+
+#middleBar .searchBoxLg iconify-icon {
+    position: absolute;
+    font-size: 22px;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 16px;
+}
+
+#middleBar .searchBoxLg input {
+    border: 1px solid var(--gray-scale-gray-–-100);
+    outline: none;
+    border-radius: 6px 0 0 6px;
+    width: 498px;
+    height: 45px;
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 140%;
+    color: var(--gray-scale-gray-–-500);
+    padding-left: 44px;
+}
+
+#middleBar .searchBtn {
+    border-radius: 0 6px 6px 0;
+    padding: 14px 24px;
+    width: 98px;
+    height: 45px;
+    background: var(--branding-success);
+    font-family: var(--font-family);
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 120%;
+    color: var(--gray-scale-white);
+    outline: none;
+    border: none;
+}
+
+#middleBar .actionLinks iconify-icon {
+    font-size: 32px;
+    padding: 0 8px;
+    cursor: pointer;
+}
+
+#middleBar .actionLinks .cartIcon iconify-icon {
+    border-left: 1px solid var(--gray-scale-gray-–-200);
+    ;
+}
+
+#middleBar .cartIcon {
+    position: relative;
+}
+
+#middleBar .quantity {
+    position: absolute;
+    top: 0;
+    right: 8px;
+    border: 1px solid var(--gray-scale-white);
+    border-radius: 16px;
+    width: 18px;
+    height: 18px;
+    background: var(--branding-success-dark);
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 10px;
+    line-height: 18px;
+    text-align: center;
+    color: var(--gray-scale-white);
+}
+
+#middleBar .paymentDetails {
+    margin-left: 10px;
+}
+
+#middleBar .paymentDetails p {
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 11px;
+    color: var(--gray-scale-gray-–-700);
+}
+
+#middleBar .paymentDetails h5 {
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 14px;
+    color: var(--gray-scale-gray-–-900);
+}
+
+#middleBar .cartIcon button {
+    background: transparent;
+    border: none;
+    outline: none;
+}
+
+/* *cart sidebar start*/
+#middleBar .offcanvas-title {
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 20px;
+    color: var(--gray-scale-gray-–-900);
+}
+#middleBar .product h6 {
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 14px;
+    color: var(--gray-scale-gray-–-900);
+}
+
+#middleBar .product p {
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 14px;
+    color: var(--gray-scale-gray-–-500);
+}
+
+#middleBar .product p span {
+    font-family: var(--font-family);
+    font-weight: 600;
+    font-size: 14px;
+    color: var(--gray-scale-gray-–-900);
+}
+#middleBar .col-1 iconify-icon{
+    border: 1px solid var(--gray-scale-gray-–-300);
+    border-radius: 50%;
+    cursor: pointer;
+}
+#middleBar .btn-close{
+    box-shadow: none;
+}
+#middleBar .offcanvas.offcanvas-end{
+    transition: 0.3s ease;
+}
+/* *cart sidebar End*/
+
+/* *Middle Bar Desktop End */
+/* *Middle Bar Mobile Start */
+#middleBarSm{
+    padding: 10px 0;
+}
+#middleBarSm .col-3 button{
+    background: transparent;
+    border: none;
+    outline: none;
+    color: #000;
+    font-size: 20px;
+}
+#middleBarSm iconify-icon{
+    font-size: 20px;
+}
+#middleBarSm .offcanvas{
+    max-width: 80%;
+}
+#middleBarSm .offcanvas.offcanvas-start{
+    transition: 0.3s ease;
+}
+#middleBarSm .menuSide ul li a{
+    font-family: var(--font-family);
+font-weight: 500;
+font-size: 18px;
+color: var(--gray-scale-gray-–-500);
+}
+#middleBarSm .menuSide ul li{
+    padding: 5px 10px;
+}
+#middleBarSm .offcanvas-body .row iconify-icon:focus,
+#middleBarSm .menuSide ul li a:focus{
+    color: var(--branding-success-dark);
+}
+#middleBarSm .shopCollapse ul li a{
+    font-weight: 400;
+    font-size: 16px;
+}
+#middleBarSm .offcanvas-body{
+    overflow: auto;
+}
+#middleBarSm .offcanvas-body .row iconify-icon{
+    font-size: 15px;
+    color: var(--gray-scale-gray-–-500);
+}
+#middleBarSm .shopOpen{
+    height: 0;
+    overflow: hidden;
+    transition: 0.3s ease;
+}
+#middleBarSm .shopOpen.active{
+    height: auto;
+}
+/* *Middle Bar Mobile End */
