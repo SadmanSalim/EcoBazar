@@ -149,15 +149,17 @@
                                     <iconify-icon icon="ep:arrow-right-bold"></iconify-icon>
                                 </div>
                             </div>
-                            <ul class="shopOpen">
-                                <li><a href="#">Food</a></li>
-                                <li><a href="#">Baby Food & Care</a></li>
-                                <li><a href="#">Home Cleaning</a></li>
-                                <li><a href="#">Beauty & Health</a></li>
-                                <li><a href="#">Fashion & Lifestyle</a></li>
-                                <li><a href="#">Home & Kitchen</a></li>
-                                <li><a href="#">Stationeries</a></li>
-                            </ul>
+                            <nav>
+                                <ul class="shopOpen">
+                                    <li><a href="#">Food</a></li>
+                                    <li><a href="#">Baby Food & Care</a></li>
+                                    <li><a href="#">Home Cleaning</a></li>
+                                    <li><a href="#">Beauty & Health</a></li>
+                                    <li><a href="#">Fashion & Lifestyle</a></li>
+                                    <li><a href="#">Home & Kitchen</a></li>
+                                    <li><a href="#">Stationeries</a></li>
+                                </ul>
+                            </nav>
                         </li>
                         <li class="shopCollapse">
                             <div class="row">
@@ -247,33 +249,54 @@
 
 
         <!-- *Desktop Nav Bar Start -->
-        <nav>
+        <nav class="d-none d-lg-block navBarDesktop"> 
             <div class="container">
-                <div class="row">
+                <div class="row align-items-center">
                     <div class="col-3">
                         <div class="dropdown">
-                            <button class="categoryDrop d-flex align-items-center" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <button class="categoryDrop d-flex align-items-center justify-content-evenly" type="button" data-bs-toggle="dropdown" aria-expanded="false">
                                 <iconify-icon icon="lucide:menu"></iconify-icon><span>All Categories</span><iconify-icon icon="iconamoon:arrow-down-2-thin"></iconify-icon>
                             </button>
                             <ul class="dropdown-menu">
-                              <li><a class="dropdown-item" href="#">Action</a></li>
-                              <li><a class="dropdown-item" href="#">Another action</a></li>
-                              <li><a class="dropdown-item" href="#">Something else here</a></li>
-                            </ul>
+                                <li><a class="dropdown-item" href="#">Food</a></li>
+                                <li><a class="dropdown-item" href="#">Baby Food & Care</a></li>
+                                <li><a class="dropdown-item" href="#">Home Cleaning</a></li>
+                                <li><a class="dropdown-item" href="#">Beauty & Health</a></li>
+                                <li><a class="dropdown-item" href="#">Fashion & Lifestyle</a></li>
+                                <li><a class="dropdown-item" href="#">Home & Kitchen</a></li>
+                                <li><a class="dropdown-item" href="#">Stationeries</a></li>
+                                </ul>
                           </div>
                     </div>
-                    <div class="col-7">
+                    <div class="col-7 middleNav">
                         <ul class="d-flex align-items-center justify-content-start">
-                            <li><a href="index.html">Home</a></li>
-                            <li><a href="#">Shop</a></li>
-                            <li><a href="#">Pages</a></li>
-                            <li><a href="#">Blog</a></li>
-                            <li><a href="#">About Us</a></li>
-                            <li><a href="#">Contact Us</a></li>
+                            <li><a class="active" href="index.html">Home</a></li>
+                            <li class="desktopParent">
+                                <a class="d-flex align-items-center" href="#">Shop <iconify-icon icon="iconamoon:arrow-down-2-bold"></iconify-icon></a>
+                                <ul class="desktopChild">
+                                    <li><a href="#">Food</a></li>
+                                    <li><a href="#">Baby Food & Care</a></li>
+                                    <li><a href="#">Home Cleaning</a></li>
+                                    <li><a href="#">Beauty & Health</a></li>
+                                    <li><a href="#">Fashion & Lifestyle</a></li>
+                                    <li><a href="#">Home & Kitchen</a></li>
+                                    <li><a href="#">Stationeries</a></li>
+                                </ul>
+                            </li>
+                            <li class="desktopParent"><a class="d-flex align-items-center" href="#">Pages <iconify-icon icon="iconamoon:arrow-down-2-bold"></iconify-icon></a>
+                                <ul class="desktopChild">
+                                    <li><a href="#">24/7 Support</a></li>
+                                    <li><a href="#">Privacy Policy</a></li>
+                                </ul>
+                            </li>
+                            <li><a class="" href="#">Blog</a></li>
+                            <li><a class="" href="#">About Us</a></li>
+                            <li><a class="" href="#">Contact Us</a></li>
                         </ul>
                     </div>
-                    <div class="col-2">
+                    <div class="col-2 d-flex align-items-center quickCall">
                         <iconify-icon icon="ph:phone-call-light"></iconify-icon>
+                        <a href="tel:219555-0114">(219) 555-0114</a>
                     </div>
                 </div>
             </div>
