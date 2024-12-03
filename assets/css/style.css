@@ -409,6 +409,10 @@ color: var(--gren-gray-scale-400);
     align-items: center;
     box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 }
+#bottomNavBar .col-3:focus{
+    background: var(--branding-success-dark);
+    color: #fff;
+}
 #bottomNavBar .col-3.active{
     background: var(--branding-success-dark);
     width: 40px;
