@@ -13,4 +13,12 @@ $(document).ready(function () {
             iconElement.attr('icon', 'ep:arrow-down-bold');
         }
     });
+    $('.searchMob').click(function(){
+        $('.searchBoxMobile').addClass('active');
+        $('.bottomNavBar').addClass('d-none');
+    });
+    $('.closeBtnSearch').click(function(){
+        $('.searchBoxMobile').removeClass('active');
+        $('.bottomNavBar').removeClass('d-none');
+    });
 });
