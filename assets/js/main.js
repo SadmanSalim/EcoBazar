@@ -13,6 +13,29 @@ $(document).ready(function () {
             iconElement.attr('icon', 'ep:arrow-down-bold');
         }
     });
+    $('.pasToggl').click(function () {
+        // Find the input field within the same parent container as the clicked icon
+        var inputField = $(this).siblings('input');
+    
+        // Toggle the input type
+        var type = inputField.attr('type') === 'password' ? 'text' : 'password';
+        inputField.attr('type', type);
+    
+        // Toggle the icon
+        var icon = type === 'password' ? 'ion:eye-off-outline' : 'ion:eye-outline';
+        $(this).find('iconify-icon').attr('icon', icon);
+      });
+    
+      $('.RegisterBtn').click(function () {
+        $('.Register').removeClass('d-none');
+        $('.signIn').addClass('d-none');
+      });
+      $('.signInBtn').click(function () {
+        $('.Register').addClass('d-none');
+        $('.signIn').removeClass('d-none');
+      });
+
+
     $('.searchMob').click(function(){
         $('.searchBoxMobile').addClass('active');
         $('.bottomNavBar').addClass('d-none');

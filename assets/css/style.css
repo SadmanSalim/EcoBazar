@@ -183,7 +183,7 @@ iconify-icon {
 }
 
 #middleBar .paymentDetails {
-    margin-left: 10px;
+    margin-left: -2px;
 }
 
 #middleBar .paymentDetails p {
