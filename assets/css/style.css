@@ -386,6 +386,7 @@ color: var(--gren-gray-scale-400);
     bottom: 0;
     transform: translateY(100%);
     width: 100%;
+    background: #fff;
     height: 80px;
     box-shadow: rgba(0, 0, 0, 0.15) 1.95px -1.95px 2.6px;
     animation: navIn 0.3s forwards;
@@ -409,6 +410,12 @@ color: var(--gren-gray-scale-400);
     align-items: center;
     box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 }
+#bottomNavBar .col-3 a{
+    color: #000;
+  }
+  #bottomNavBar .col-3.active a{
+    color: #fff;
+  }
 #bottomNavBar .col-3:focus{
     background: var(--branding-success-dark);
     color: #fff;
