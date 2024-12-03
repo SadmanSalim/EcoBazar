@@ -1,0 +1,23 @@
+@media (max-width: 991.9px) {
+  #newsLetter .middleSide .inputBox button {
+    width: 40%;
+  }
+  #newsLetter .middleSide .inputBox {
+    margin-top: 20px;
+  }
+  #newsLetter .right-side {
+    margin-top: 20px;
+  }
+
+  /* *Footer Start Here */
+  footer .rightSide ul h4 {
+    margin-top: 20px;
+  }
+  footer #FooterTop {
+    padding: 60px 0 0;
+  }
+  #copyRight p {
+    margin-bottom: 20px;
+  }
+  /* *Footer End Hear */
+}
