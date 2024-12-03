@@ -441,7 +441,7 @@ color: var(--gren-gray-scale-400);
 /* *Bottom Navbar End */
 
 /* *Nam Menu Desktop Start */
-.navBarDesktop{
+nav{
   background: var(--gray-scale-gray-–-50);
   padding: 16px 0;
 }
@@ -819,3 +819,6 @@ footer .rightSide ul li a:focus {
 }
 /* *Footer bottom End Hear */
 /* *Footer End Hear */
+#middleBar .offcanvas nav{
+  background: transparent;
+}
