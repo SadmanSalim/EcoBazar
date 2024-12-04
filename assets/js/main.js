@@ -42,4 +42,14 @@ $(document).ready(function () {
         $('.searchBoxMobile').removeClass('active');
         $('.bottomNavBar').removeClass('d-none');
     });
+
+
+    // *Swipper
+    var swiper = new Swiper(".mySwiper", {
+        pagination: {
+          el: ".swiper-pagination",
+          dynamicBullets: true,
+        },
+      });
 });
+
