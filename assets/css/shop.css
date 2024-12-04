@@ -36,7 +36,18 @@ li {
 iconify-icon {
   line-height: 10px !important;
 }
-
+html,
+body {
+  scroll-behavior: smooth;
+}
+::-webkit-scrollbar {
+  width: 7px;
+  background: var(--gray-scale-white);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--branding-success);
+  border-radius: 50px;
+}
 :root {
   --gren-gray-scale-900: #002603;
   --gren-gray-scale-800: #173b1a;
