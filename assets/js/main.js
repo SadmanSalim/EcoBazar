@@ -57,16 +57,16 @@ $(document).ready(function () {
       });
 
     // *  popup close
-$('.close-btn').click(function() {
-    $('.popup').addClass('d-none'); 
-});
+// $('.close-btn').click(function() {
+//     $('.popup').addClass('d-none'); 
+// });
 
-$(window).on('load', function() {
-    setTimeout(function() {
-        $('.popup').removeClass('d-none'); 
-        $('.popup').addClass('d-block');  
-    }, 2000); 
-});
+// $(window).on('load', function() {
+//     setTimeout(function() {
+//         $('.popup').removeClass('d-none'); 
+//         $('.popup').addClass('d-block');  
+//     }, 2000); 
+// });
 
 });
 
