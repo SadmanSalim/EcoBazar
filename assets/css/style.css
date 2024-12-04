@@ -585,6 +585,7 @@ nav .quickCall a {
     background: var(--gray-scale-white);
 }
 
+#banner .bgImages::selection,
 #banner::selection{
     user-select: none;
     background: #fff;
@@ -742,6 +743,202 @@ nav .quickCall a {
 
 
 /* *Main Banner End */
+
+
+
+
+
+
+/* *Popup Start Here */
+#popup{
+    width: 100%;
+    height: 100vh;
+    background: rgb(128, 128, 128, 0.5);
+    position: fixed;
+    top: 0;
+    z-index: 100;
+}
+#popup .popup2{
+    position: fixed;
+    width: 872px;
+    height: 400px;
+    box-shadow: 0 12px 48px 0 rgba(0, 0, 0, 0.12);
+    background: #fff;
+    animation: popupIn 0.3s ease forwards;
+    left: 50%;
+    top: 50%;
+     transform: translate(-50%, -50%);
+}
+@keyframes popupIn {
+    0%{
+        /* left: 50%;
+        top: 50%;
+        transform: translateY(-100%); */
+        opacity: 0;
+    }
+    100%{
+        /* left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%); */
+        opacity: 1;
+    
+    }
+}
+#popup .close-btn{
+    position: absolute;
+    top: 10px;
+    cursor: pointer;
+}
+#popup .popText h3{
+    font-family: var(--font-family);
+    font-weight: 600;
+    font-size: 40px;
+    text-align: center;
+    color: var(--gray-scale-gray-–-900);
+}
+#popup .popText .sub{
+    font-family: var(--font-family);
+font-weight: 400;
+font-size: 16px;
+text-align: center;
+color: var(--gray-scale-gray-–-400);
+margin: 12px 0 24px 0;
+width: 400px;
+}
+#popup .popText p span {
+    font-weight: 600;
+color: var(--branding-warning);
+}
+#popup .popText .dontShow p{
+    font-family: var(--font-family);
+font-weight: 400;
+font-size: 14px;
+color: var(--gray-scale-gray-–-600);
+margin-left: 5px;
+}
+#popup .popText .subscribe{
+    position: relative;
+}
+#popup .popText .subscribe input{
+    border: 1px solid var(--gray-scale-gray-–-100);
+border-radius: 46px;
+padding: 14px 24px;
+width: 343px;
+height: 49px;
+background: var(--gray-scale-white);
+outline: none;
+}
+#popup .popText .subscribe button{
+    border-radius: 43px;
+padding: 15px 40px 14px 40px;
+width: 147px;
+height: 49px;
+background: var(--branding-success);
+border: none;
+outline: none;
+display: flex;
+justify-content: center;
+align-items: center;
+color: #fff;
+position: absolute;
+right: 50px;
+}
+
+/* *Popup End Here */
+
+
+/* *Footer Start Here */
+footer {
+    width: 100%;
+    background: var(--gray-scale-gray-–-900);
+  }
+  
+  footer #FooterTop {
+    padding: 60px 0;
+  }
+  
+  footer .leftSide {
+    width: 336px;
+  }
+  
+  footer .leftSide .logo span {
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 119%;
+    letter-spacing: -0.03em;
+    margin-left: 5px;
+    color: var(--gray-scale-white);
+  }
+  
+  footer .leftSide p {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 150%;
+    color: var(--gray-scale-gray-–-500);
+    margin: 16px 0;
+  }
+  
+  footer .leftSide span {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    color: var(--gray-scale-gray-–-500);
+    margin: 0 2px;
+  }
+  
+  footer .leftSide span a {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 150%;
+    padding-bottom: 3px;
+    color: var(--gray-scale-white);
+    border-bottom: 2px solid var(--branding-success-dark);
+  }
+  
+  footer .rightSide ul h4 {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 150%;
+    color: var(--gray-scale-white);
+    margin-bottom: 14px;
+  }
+  
+  footer .rightSide ul li {
+    margin: 6px 0;
+  }
+  
+  footer .rightSide ul li a {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 150%;
+    color: var(--gray-scale-gray-–-400);
+    transition: 0.2s;
+  }
+  
+  footer .rightSide ul li a:hover,
+  footer .rightSide ul li a:focus {
+    color: var(--gray-scale-white);
+  }
+  
+  /* *Footer bottom Start Here */
+  #copyRight {
+    padding: 24px 0px;
+  }
+  
+  #copyRight p {
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 150%;
+    color: var(--gray-scale-gray-–-500);
+  }
+  
+  #copyRight a {
+    margin: 0 4px;
+  }
+  
+  /* *Footer bottom End Hear */
+  /* *Footer End Hear */
 
 
 
