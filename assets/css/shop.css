@@ -625,7 +625,7 @@ nav .quickCall a {
 
 /* *Breadcrumbs End Here */
 #allProduct {
-  margin: 32px;
+  margin: 32px 0;
 }
 /* ! ===================Filtering Left Section Start Here======================== */
 .filterBtn {
@@ -670,6 +670,16 @@ nav .quickCall a {
 }
 .shopOpen li {
   padding: 5px 0;
+}
+.shopOpen label {
+  cursor: pointer;
+}
+.shopOpen label span {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 150%;
+  color: var(--gray-scale-gray-–-500);
+  margin-left: 5px;
 }
 .shopOpen.active {
   transform: translateY(0%);
