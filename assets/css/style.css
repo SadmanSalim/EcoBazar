@@ -699,7 +699,7 @@ nav .quickCall a {
   z-index: 1;
 }
 
-.swiper-slide {
+#banner .swiper-slide {
   text-align: center;
   font-size: 18px;
   background: transparent;
@@ -708,14 +708,14 @@ nav .quickCall a {
   align-items: center;
 }
 
-.swiper-slide img {
+#banner .swiper-slide img {
   display: block;
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
 
-.swiper-horizontal
+#banner .swiper-horizontal
   > .swiper-pagination-bullets.swiper-pagination-bullets-dynamic
   .swiper-pagination-bullet,
 .swiper-pagination-horizontal.swiper-pagination-bullets.swiper-pagination-bullets-dynamic
@@ -1131,6 +1131,41 @@ color: var(--branding-success);
 
 
 /* *BEst Deals  ENDS HERE */
+
+
+/* *Feature Product Swipper  START HERE */
+#featureProduct {
+  width: 100%;
+}
+#featureProduct .swiper {
+  width: 100%;
+  height: 100%;
+}
+#featureProduct .swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#featureProduct .swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+#featureProduct .head{
+  font-family: var(--font-family);
+font-weight: 600;
+font-size: 40px;
+text-align: center;
+color: var(--gren-gray-scale-900);
+margin: 100px 0 20px;
+}
+
+/* * Feature Product Swipper ENDS HERE */
 
 /* *Popup Start Here */
 #popup {
