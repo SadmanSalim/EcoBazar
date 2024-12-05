@@ -364,6 +364,7 @@
                         <iconify-icon icon="rivet-icons:filter" width="20" height="20"></iconify-icon>
                      </span>
                   </div>
+                  <!-- *All Categories Radio Buttons Start Here-->
                   <div class="categories">
                      <div class="row align-items-center categoreBtn">
                         <div class="col-6 radioParent"><a type="button">All Categories</a></div>
@@ -373,40 +374,158 @@
                      </div>
                      <li class="shopCollapse">
                         <ul class="shopOpen active">
-                           <li>
+                           <li class="d-flex align-items-center">
                               <input type="radio" id="Fresh" name="Categories">
                               <label for="Fresh">Fresh Fruit (25)<span>(134)</span></label>
                            </li>
-                           <li>
+                           <li class="d-flex align-items-center">
                               <input type="radio" id="Vegetables" name="Categories">
                               <label for="Vegetables">Vegetables<span>(150)</span></label>
                            </li>
-                           <li>
+                           <li class="d-flex align-items-center">
                               <input type="radio" id="Cooking" name="Categories">
                               <label for="Cooking">Cooking<span>(54)</span></label>
                            </li>
-                           <li>
+                           <li class="d-flex align-items-center">
                               <input type="radio" id="Snacks" name="Categories">
                               <label for="Snacks">Snacks<span>(47)</span></label>
                            </li>
-                           <li>
+                           <li class="d-flex align-items-center">
                               <input type="radio" id="Beverages" name="Categories">
                               <label for="Beverages">Beverages<span>(43)</span></label>
                            </li>
-                           <li>
+                           <li class="d-flex align-items-center">
                               <input type="radio" id="Beauty" name="Categories">
                               <label for="Beauty">Beauty & Health<span>(38)</span></label>
                            </li>
-                           <li>
+                           <li class="d-flex align-items-center" class="d-flex align-items-center">
                               <input type="radio" id="Bread" name="Categories">
                               <label for="Bread">Bread & Bakery<span>(15)</span></label>
                            </li>
                         </ul>
                      </li>
                   </div>
+                  <!-- *All Categories Radio Buttons End Here-->
+                  <!-- *Price Range Slider Start Here -->
+
+                  <div class="priceBox">
+                     <div class="col-12 d-flex justify-content-between priceBtn">
+                        <span>Price</span>
+                        <span>
+                           <iconify-icon icon="ep:arrow-down-bold"></iconify-icon>
+                        </span>
+                     </div>
+                     <div class="priceRangeWrapper">
+                        <div class="priceRangeOpen active">
+                           <div class="slider-wrapper">
+                              <div class="range-input">
+                                 <input type="range" class="min-range" min="0" max="10000" value="2500" step="1">
+                                 <input type="range" class="max-range" min="0" max="10000" value="8500" step="1">
+                              </div>
+                              <div class="slider-container">
+                                 <div class="price-slider">
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="price-input-container">
+                              <div class="price-input">
+                                 <span>Price :</span>
+                                 <input type="number" class="min-input price-value" value="2500">
+                                 <iconify-icon icon="tabler:minus"></iconify-icon>
+                                 <input type="number" class="max-input price-value" value="8500" readonly>
+                                 <div class="price-field">
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+
+                  <!-- *Price Range Slider End Here-->
+                  <!-- *Rating Stert Here-->
+                  <div class="rating">
+                     <div class="row align-items-center ratingBtn">
+                        <div class="col-6 ratingParent"><a type="button">Rating</a></div>
+                        <div class="col-6 text-end">
+                           <iconify-icon icon="ep:arrow-down-bold"></iconify-icon>
+                        </div>
+                     </div>
+                     <li class="shopCollapse">
+                        <ul class="ratingOpen active">
+                           <li class="d-flex align-items-center">
+                              <input type="radio" id="fiveStar" name="Categories">
+                              <label for="fiveStar">
+                                 <iconify-icon icon="twemoji:star" width="20" height="20"></iconify-icon>
+                                 <iconify-icon icon="twemoji:star" width="20" height="20"></iconify-icon>
+                                 <iconify-icon icon="twemoji:star" width="20" height="20"></iconify-icon>
+                                 <iconify-icon icon="twemoji:star" width="20" height="20"></iconify-icon>
+                                 <iconify-icon icon="twemoji:star" width="20" height="20"></iconify-icon>
+                                 <span>5.0</span>
+                              </label>
+                           </li>
+                           <li class="d-flex align-items-center">
+                              <input type="radio" id="ForStar" name="Categories">
+                              <label for="ForStar">
+                                 <iconify-icon icon="twemoji:star" width="20" height="20"></iconify-icon>
+                                 <iconify-icon icon="twemoji:star" width="20" height="20"></iconify-icon>
+                                 <iconify-icon icon="twemoji:star" width="20" height="20"></iconify-icon>
+                                 <iconify-icon icon="twemoji:star" width="20" height="20"></iconify-icon>
+                                 <iconify-icon icon="heroicons:star-20-solid" width="20" height="20"
+                                    style="color: #b3b3b3"></iconify-icon>
+                                 <span>4.0 & up</span>
+                              </label>
+                           </li>
+                           <li class="d-flex align-items-center">
+                              <input type="radio" id="threeStar" name="Categories">
+                              <label for="threeStar">
+                                 <iconify-icon icon="twemoji:star" width="20" height="20"></iconify-icon>
+                                 <iconify-icon icon="twemoji:star" width="20" height="20"></iconify-icon>
+                                 <iconify-icon icon="twemoji:star" width="20" height="20"></iconify-icon>
+                                 <iconify-icon icon="heroicons:star-20-solid" width="20" height="20"
+                                    style="color: #b3b3b3"></iconify-icon>
+                                 <iconify-icon icon="heroicons:star-20-solid" width="20" height="20"
+                                    style="color: #b3b3b3"></iconify-icon>
+                                 <span>3.0 & up</span>
+                              </label>
+                           </li>
+                           <li class="d-flex align-items-center">
+                              <input type="radio" id="tweStar" name="Categories">
+                              <label for="tweStar">
+                                 <iconify-icon icon="twemoji:star" width="20" height="20"></iconify-icon>
+                                 <iconify-icon icon="twemoji:star" width="20" height="20"></iconify-icon>
+                                 <iconify-icon icon="heroicons:star-20-solid" width="20" height="20"
+                                    style="color: #b3b3b3"></iconify-icon>
+                                 <iconify-icon icon="heroicons:star-20-solid" width="20" height="20"
+                                    style="color: #b3b3b3"></iconify-icon>
+                                 <iconify-icon icon="heroicons:star-20-solid" width="20" height="20"
+                                    style="color: #b3b3b3"></iconify-icon>
+                                 <span>2.0 & up</span>
+                              </label>
+                           </li>
+                           <li class="d-flex align-items-center">
+                              <input type="radio" id="oneStar" name="Categories">
+                              <label for="oneStar">
+                                 <iconify-icon icon="twemoji:star" width="20" height="20"></iconify-icon>
+                                 <iconify-icon icon="heroicons:star-20-solid" width="20" height="20"
+                                    style="color: #b3b3b3"></iconify-icon>
+                                 <iconify-icon icon="heroicons:star-20-solid" width="20" height="20"
+                                    style="color: #b3b3b3"></iconify-icon>
+                                 <iconify-icon icon="heroicons:star-20-solid" width="20" height="20"
+                                    style="color: #b3b3b3"></iconify-icon>
+                                 <iconify-icon icon="heroicons:star-20-solid" width="20" height="20"
+                                    style="color: #b3b3b3"></iconify-icon>
+                                 <span>1.0 & up</span>
+                              </label>
+                           </li>
+
+
+                        </ul>
+                     </li>
+                  </div>
+                  <!-- *Rating End Here-->
+
                </section>
                <!-- *Filtering End Hear -->
-
 
                <!-- *Products Start Here -->
                <section id="product" class="col-lg-9 col-12">
@@ -1054,7 +1173,6 @@
                   <!-- *category End Hear -->
                </section>
                <!-- *Products End Hear -->
-
 
             </div>
          </div>
