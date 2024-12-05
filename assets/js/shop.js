@@ -49,6 +49,14 @@ $(document).ready(function () {
     );
   });
 
+  // Filter Mobile Button
+  $('.filterMdBtn').click(function () {
+    $('.filterCotant').addClass('active');
+  });
+  $('.filterClose').click(function () {
+    $('.filterCotant').removeClass('active');
+  });
+
   $('.All').click(function () {
     $('.VegetablesCard').removeClass('d-none');
     $('.CookingCard').removeClass('d-none');

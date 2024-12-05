@@ -932,7 +932,59 @@ input[type='range']::-webkit-slider-thumb {
 /* *Populae Tag End Here */
 /* *Filtering Left Section End Here */
 
+/* Filter Slider Start Here */
+
+.filterSlider .filterCotant {
+  transform: translateX(100%);
+  max-width: 80%;
+  width: 400px;
+  height: 100vh;
+  background-color: #fff;
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 200;
+  border: 1px solid var(--gray-scale-gray-–-50);
+  transition: 0.3s;
+  padding: 0 20px;
+  overflow: auto;
+}
+.filterSlider .filterCotant.active {
+  transform: translateX(0%);
+}
+.filterSlider .filterCotant.active .filterSlider {
+  width: 100%;
+  height: 100vh;
+  background: #000000;
+  z-index: 100;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+.filterSlider .filterCotant .filterClose {
+  background: transparent;
+  border: 0;
+  font-size: 40px;
+}
+/* Filter Slider End Here */
+
 /* ? Products Right Section Start Here */
+
+/* Mobile Filter Button Start  */
+#category .filterMdBtn button {
+  border: 0;
+  background-color: var(--branding-success);
+  padding: 10px 15px 4px;
+  border-radius: 10px;
+  font-size: 16px;
+  color: var(--gray-scale-white);
+  font-weight: 500;
+}
+#category .filterMdBtn button span iconify-icon {
+  color: var(--gray-scale-white);
+}
+
+/* Mobile Filter Button End  */
 
 #category .sortBox span {
   font-weight: 400;

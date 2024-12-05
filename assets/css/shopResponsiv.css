@@ -8,4 +8,8 @@
   #copyRight p {
     padding: 10px 4px;
   }
+  #category .sortBox select {
+    width: 121px;
+    height: 41px;
+  }
 }
