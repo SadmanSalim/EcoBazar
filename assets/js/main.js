@@ -65,4 +65,29 @@ $(document).ready(function () {
       $('.popup').addClass('d-block');
     }, 2000);
   });
+
+  // category
+
+  $('.fruitsBtn').click(function(){
+    $('.Vegetables').addClass('d-none');
+    $('.fruits').removeClass('d-none');
+    $('.fruitsBtn').addClass('active');
+    $('#all').removeClass('active');
+    $('.veg').removeClass('active');
+  });
+  $('.All').click(function(){
+    $('.fruits').removeClass('d-none')
+    $('.Vegetables').removeClass('d-none') 
+    $('.fruitsBtn').removeClass('active');
+    $('#all').addClass('active');
+    $('.veg').removeClass('active');
+  });
+  $('.veg').click(function(){
+    $('.fruits').addClass('d-none');
+    $('.Vegetables').removeClass('d-none') ;
+    $('.fruitsBtn').removeClass('active');
+    $('.veg').addClass('active');
+    $('#all').removeClass('active');
+
+  })
 });
