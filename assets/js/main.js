@@ -133,4 +133,9 @@ $(document).ready(function () {
     document.getElementById("mins").innerHTML = minutes;
     document.getElementById("secs").innerHTML = seconds;
   }, 1000);
+  $('#video .vid').click(function(){
+    console.log(1);
+    
+    $('#video-m').removeClass('d-none');
+  })
 });

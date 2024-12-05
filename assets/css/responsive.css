@@ -131,6 +131,14 @@
       #drinks .softDrinks{
         margin: 24px 0;
       }
+      #review{
+        padding-bottom: 200px;
+      }
+      #review .reviewCnt{
+        width: 95%;
+        height: auto;
+        padding-bottom: 40px;
+      }
 
 }
 @media (max-width: 375px) {
