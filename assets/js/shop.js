@@ -38,15 +38,45 @@ $(document).ready(function () {
         : 'ep:arrow-down-bold'
     );
   });
+  $('.popularBtn').click(function () {
+    let iconElement = $(this).find('iconify-icon');
+    $('.popularTagBox').toggleClass('active');
+    iconElement.attr(
+      'icon',
+      iconElement.attr('icon') === 'ep:arrow-down-bold'
+        ? 'ep:arrow-up-bold'
+        : 'ep:arrow-down-bold'
+    );
+  });
+
+  $('.All').click(function () {
+    $('.VegetablesCard').removeClass('d-none');
+    $('.CookingCard').removeClass('d-none');
+    $('.FruitCard').removeClass('d-none');
+  });
+  $('.freshFruit').click(function () {
+    $('.VegetablesCard').addClass('d-none');
+    $('.CookingCard').addClass('d-none');
+    $('.FruitCard').removeClass('d-none');
+  });
+  $('.vegetable').click(function () {
+    $('.FruitCard').addClass('d-none');
+    $('.CookingCard').addClass('d-none');
+    $('.VegetablesCard').removeClass('d-none');
+  });
+  $('.cooking').click(function () {
+    $('.FruitCard').addClass('d-none');
+    $('.CookingCard').removeClass('d-none');
+    $('.VegetablesCard').addClass('d-none');
+  });
+
   // Price toggle
 
   // Price Range Slider End Here
   const rangevalue = document.querySelector('.slider-container .price-slider');
   const rangeInputvalue = document.querySelectorAll('.range-input input');
-
   // Set the price gap
   let priceGap = 500;
-
   // Adding event listners to price input elements
   const priceInputvalue = document.querySelectorAll('.price-input input');
   for (let i = 0; i < priceInputvalue.length; i++) {
