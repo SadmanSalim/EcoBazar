@@ -48,6 +48,9 @@ body {
   background: var(--branding-success);
   border-radius: 50px;
 }
+input[type="radio"] {
+  accent-color: var(--branding-success-dark);
+}
 :root {
   --gren-gray-scale-900: #002603;
   --gren-gray-scale-800: #173b1a;
