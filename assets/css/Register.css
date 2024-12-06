@@ -557,10 +557,12 @@ nav .middleNav .desktopChild {
   margin: 5px 0;
 }
 
-.desktopChild li:hover a,
+.desktopChild li:hover a{
+
+  color: #fff;
+}
 .desktopChild li:hover {
   background: var(--branding-success-dark);
-  color: #fff;
 }
 
 nav .middleNav .desktopParent:hover .desktopChild {

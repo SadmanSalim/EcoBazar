@@ -48,6 +48,9 @@ body {
   background: var(--branding-success);
   border-radius: 50px;
 }
+input[type='radio'] {
+  accent-color: var(--branding-success-dark);
+}
 :root {
   --gren-gray-scale-900: #002603;
   --gren-gray-scale-800: #173b1a;
@@ -905,7 +908,7 @@ input[type='range']::-webkit-slider-thumb {
 
 .popularTagBox.active {
   transform: translateY(0%);
-  height: 215px;
+  height: auto;
   overflow: visible;
 }
 .popularCollapse .popularTag {
@@ -930,6 +933,101 @@ input[type='range']::-webkit-slider-thumb {
   color: var(--gray-scale-white);
 }
 /* *Populae Tag End Here */
+
+/* *Discount AD Products Start Here */
+#discount {
+  width: 100%;
+  height: 295px;
+  background-image: url(../img/discount.png);
+  margin: 10px 0;
+  border-radius: 10px;
+}
+#discount .textBox {
+  width: 100%;
+  height: 100%;
+  display: inline-block;
+}
+#discount .textBox h2 {
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 150%;
+  color: var(--gray-scale-gray-–-900);
+  padding: 24px 0 2px;
+}
+#discount .textBox h2 span {
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 120%;
+  text-align: center;
+  color: var(--branding-warning);
+}
+#discount .textBox p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  text-align: center;
+  color: var(--gray-scale-gray-–-700);
+  margin-bottom: 12px;
+}
+#discount .textBox span {
+  font-family: var(--font-family);
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 120%;
+  color: var(--branding-success);
+}
+#discount .textBox span iconify-icon {
+  font-size: 20px;
+}
+/* *Discount AD Products End Here */
+
+/* *Best Sale Products Start Hear */
+#saleProducts h3 {
+  font-weight: 500;
+  margin: 20px 0 12px;
+  font-size: 20px;
+  line-height: 150%;
+  color: var(--gray-scale-gray-–-900);
+}
+#saleProducts .seleCard {
+  border: 1px solid var(--gray-scale-gray-–-100);
+  border-radius: 6px;
+  width: 312px;
+  padding: 20px 12px;
+  margin: 10px 0;
+  transition: 0.3s;
+}
+#saleProducts .seleCard:focus,
+#saleProducts .seleCard:hover {
+  border: 1px solid var(--branding-success);
+  box-shadow: 0 0 12px 0 rgba(32, 181, 38, 0.32);
+}
+#saleProducts .seleCard h4 {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 150%;
+  color: var(--gray-scale-gray-–-700);
+  transition: 0.2s;
+}
+#saleProducts .seleCard h4:focus,
+#saleProducts .seleCard h4:hover {
+  color: var(--branding-success);
+}
+#saleProducts .seleCard span {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 150%;
+  color: var(--gray-scale-gray-–-900);
+}
+#saleProducts .seleCard span del {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  text-decoration: line-through;
+  color: var(--gray-scale-gray-–-400);
+}
+/* *Best Sale Products End Hear */
+
 /* *Filtering Left Section End Here */
 
 /* Filter Slider Start Here */
@@ -959,18 +1057,21 @@ input[type='range']::-webkit-slider-thumb {
   z-index: 100;
   position: fixed;
   top: 0;
-  left: 0;
+  left: 0px;
 }
 .filterSlider .filterCotant .filterClose {
   background: transparent;
   border: 0;
-  font-size: 40px;
+  font-size: 30px;
+  position: absolute;
+  top: 5px;
+  left: 5px;
 }
 /* Filter Slider End Here */
 
 /* ? Products Right Section Start Here */
 
-/* Mobile Filter Button Start  */
+/* *Mobile Filter Button Start  */
 #category .filterMdBtn button {
   border: 0;
   background-color: var(--branding-success);
@@ -984,7 +1085,7 @@ input[type='range']::-webkit-slider-thumb {
   color: var(--gray-scale-white);
 }
 
-/* Mobile Filter Button End  */
+/* *Mobile Filter Button End  */
 
 #category .sortBox span {
   font-weight: 400;
@@ -1121,7 +1222,7 @@ input[type='range']::-webkit-slider-thumb {
   background: var(--branding-success);
   color: var(--gray-scale-white);
 }
-
+/* *Next Page Start Here */
 .nextPage {
   margin: 40px 0;
 }
@@ -1157,6 +1258,7 @@ input[type='range']::-webkit-slider-thumb {
   line-height: 50px;
 }
 
+/* *Next Page End Hear */
 /* *card End Here */
 
 /* ? Products Right Section End Here */
