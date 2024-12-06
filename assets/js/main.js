@@ -49,9 +49,9 @@ $(document).ready(function () {
       dynamicBullets: true,
     },
     navigation: {
-      nextEl: "#banner .swiper-button-next",
-      prevEl: "#banner .swiper-button-prev",
-    },
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+   },
   });
   var swiper = new Swiper("#featureProduct .mySwiper", {
     slidesPerView: 5,

@@ -529,10 +529,9 @@ nav .middleNav ul li a {
   color: var(--gray-scale-gray-–-500);
   transition: 0.3s;
 }
-
-nav .middleNav ul li a:hover {
+/* nav .middleNav ul li a:hover {
   color: var(--branding-success);
-}
+} */
 
 nav .middleNav ul li a.active {
   font-family: var(--font-family);
@@ -562,11 +561,14 @@ nav .middleNav .desktopChild {
 .desktopChild li {
   margin: 5px 0;
 }
-
-.desktopChild li:hover a,
+.desktopChild li:hover a{
+  color: #fff;
+}
+.desktopChild li a:hover a{
+  color: #fff;
+}
 .desktopChild li:hover {
   background: var(--branding-success-dark);
-  color: #fff;
 }
 
 nav .middleNav .desktopParent:hover .desktopChild {
@@ -1316,6 +1318,7 @@ margin-top: 20px;
   display: flex;
   align-items: center;
   padding: 40px 0;
+  margin-top: 20px;
 }
 
 #newsLetter .leftSide h2 {
@@ -1339,6 +1342,7 @@ margin-top: 20px;
   background: var(--gray-scale-white);
   border: 1px solid var(--gray-scale-gray-–-100);
   border-radius: 46px;
+  margin-bottom: 10px;
 }
 
 #newsLetter .middleSide .inputBox input {
@@ -1366,7 +1370,9 @@ margin-top: 20px;
   background: var(--branding-success);
   font-weight: 600;
   font-size: 16px;
-  line-height: 125%;
+display: flex;
+justify-content: center;
+align-items: center;
   color: var(--gray-scale-white);
 }
 
