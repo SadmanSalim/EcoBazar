@@ -1241,6 +1241,10 @@ color: var(--gren-gray-scale-500);
 /* *Video   ENDS HERE */
 
 /* *Latest News  START HERE */
+#latestNews{
+  margin-top: -389px !important;
+  transform: translateY(30%);
+}
 #latestNews .head{
   font-family: var(--font-family);
 font-weight: 600;
@@ -1317,7 +1321,7 @@ margin-top: 20px;
   background: var(--gray-scale-gray-–-50);
   display: flex;
   align-items: center;
-  padding: 40px 0;
+  padding: 300px 0 40px;
   margin-top: 20px;
 }
 
