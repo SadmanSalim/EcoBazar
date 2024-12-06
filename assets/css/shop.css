@@ -590,7 +590,50 @@ nav .quickCall a {
   line-height: 150%;
   color: var(--gray-scale-gray-–-900);
 }
+/* *Cart Sidebar Start */
+.cardProduct {
+  height: 80%;
+}
+.checkoutBtnBox {
+  height: 20%;
+}
 
+.cardQuantity {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  color: var(--gray-scale-gray-–-900);
+}
+.totalPrice {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 120%;
+  color: var(--gray-scale-gray-–-900);
+}
+.checkout {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 120%;
+  color: var(--gray-scale-white);
+  border-radius: 43px;
+  padding: 16px 40px;
+  width: 376px;
+  height: 51px;
+  background: var(--branding-success);
+  margin: 20px 0 15px;
+}
+.cart {
+  border-radius: 43px;
+  padding: 16px 40px;
+  width: 376px;
+  height: 51px;
+  background: rgba(86, 172, 89, 0.1);
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 120%;
+  color: var(--branding-success);
+}
+/* *Cart Sidebar End */
 /* *Nav Menu Desktop End */
 /* *Breadcrumbs Start Here */
 #Breadcrumbs {
