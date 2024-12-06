@@ -48,6 +48,9 @@ body {
   background: var(--branding-success);
   border-radius: 50px;
 }
+input[type='radio'] {
+  accent-color: var(--branding-success-dark);
+}
 :root {
   --gren-gray-scale-900: #002603;
   --gren-gray-scale-800: #173b1a;
@@ -635,4 +638,301 @@ nav .quickCall a {
 }
 /* *Cart Sidebar End */
 
-/* *Nam Menu Desktop End */
+/* *Nab Menu Desktop End */
+/* *Breadcrumbs Start Here */
+#Breadcrumbs {
+  background-image: url(../img/Breadcrumbs.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 120px;
+  display: flex;
+  align-items: center;
+}
+
+#Breadcrumbs ul {
+  display: flex;
+  align-items: center;
+}
+
+#Breadcrumbs ul li {
+  display: flex;
+  align-items: center;
+}
+
+#Breadcrumbs ul li .homeIcom {
+  line-height: 10px;
+}
+
+#Breadcrumbs ul li a {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  color: var(--gray-scale-gray-–-400);
+  margin: 0 6px;
+  transition: 0.3s;
+}
+
+#Breadcrumbs ul li .active,
+#Breadcrumbs ul li a:hover,
+#Breadcrumbs ul li a:focus {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  color: var(--branding-success);
+  line-height: 10px !important;
+}
+
+/* *Breadcrumbs End Hear */
+.formBox {
+  margin-bottom: 80px;
+}
+.formBox h2 {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 150%;
+  color: var(--gray-scale-gray-–-900);
+  margin: 32px 0 20px;
+}
+.formBox form input,
+.formBox form textarea,
+.formBox form select {
+  width: 100%;
+  border: 1px solid var(--gray-scale-gray-–-100);
+  border-radius: 6px;
+  padding: 14px 16px;
+  outline: none;
+}
+.formBox form label {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 150%;
+  color: var(--gray-scale-gray-–-900);
+  margin: 16px 0 8px;
+}
+.formBox form textarea {
+  height: 100px;
+}
+.different {
+  padding: 20px 16px 32px;
+  border-bottom: 1px solid var(--gray-scale-gray-–-100);
+}
+#differentAddress {
+  border: 1px solid var(--gray-scale-gray-–-200);
+  border-radius: 3px;
+  width: 20px;
+  height: 20px;
+  margin-right: 5px;
+}
+.formBox form .different label {
+  margin-top: 5px;
+}
+
+/* *Order Summery Start Here */
+.orderSummery {
+  border: 1px solid var(--gray-scale-gray-–-100);
+  border-radius: 8px;
+  padding: 24px;
+  margin: 24px 0;
+}
+.orderSummery h4 {
+  font-weight: 500;
+  font-size: 20px;
+  color: var(--gray-scale-gray-–-900);
+}
+.orderSummery .proName {
+  font-weight: 400;
+  font-size: 14px;
+  color: var(--gray-scale-gray-–-900);
+}
+.orderSummery .proName span {
+  margin-left: 6px;
+  font-weight: 500;
+  font-size: 15px;
+}
+.orderSummery .orderCart .price {
+  font-weight: 500;
+  font-size: 14px;
+  color: var(--gray-scale-gray-–-900);
+}
+.orderCart {
+  width: 100%;
+  height: 60px;
+}
+.orderCart img {
+  width: 60px;
+  height: 60px;
+}
+.Subtotal,
+.Shipping {
+  border-bottom: 1px solid var(--gray-scale-gray-–-100);
+  padding: 12px 0;
+}
+.Total {
+  padding: 12px 0;
+}
+.Subtotal :first-child,
+.Shipping :first-child,
+.Total :first-child {
+  font-weight: 400;
+  font-size: 14px;
+  color: var(--gray-scale-gray-–-700);
+}
+.Subtotal :last-child,
+.Shipping :last-child,
+.Total :last-child {
+  font-weight: 600;
+  font-size: 14px;
+  color: var(--gray-scale-gray-–-900);
+}
+.Total :last-child {
+  font-weight: 600;
+  font-size: 18px;
+}
+.orderSummery h5 {
+  font-size: 20px;
+  margin: 12px 0 18px;
+}
+.Payment {
+  margin: 10px 0;
+}
+.Payment input {
+  width: 20px;
+  height: 20px;
+  margin-right: 6px;
+  cursor: pointer;
+}
+.Payment label {
+  cursor: pointer;
+}
+.orderSummery button {
+  border-radius: 43px;
+  padding: 16px 40px;
+  width: 376px;
+  height: 51px;
+  background: var(--branding-success);
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 120%;
+  color: var(--gray-scale-white);
+  outline: none;
+  border: 0;
+  margin: 24px 0;
+}
+/* *Order Summery End Hear */
+/* *Footer Start Here */
+footer {
+  width: 100%;
+  background: var(--gray-scale-gray-–-900);
+}
+
+footer #FooterTop {
+  padding: 60px 0;
+}
+
+footer .leftSide {
+  width: 336px;
+}
+
+footer .leftSide .logo span {
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 119%;
+  letter-spacing: -0.03em;
+  margin-left: 5px;
+  color: var(--gray-scale-white);
+}
+
+footer .leftSide p {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 150%;
+  color: var(--gray-scale-gray-–-500);
+  margin: 16px 0;
+}
+
+footer .leftSide span {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  color: var(--gray-scale-gray-–-500);
+  margin: 0 2px;
+}
+
+footer .leftSide span a {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 150%;
+  padding-bottom: 3px;
+  color: var(--gray-scale-white);
+  border-bottom: 2px solid var(--branding-success-dark);
+}
+
+footer .rightSide ul h4 {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 150%;
+  color: var(--gray-scale-white);
+  margin-bottom: 14px;
+}
+
+footer .rightSide ul li {
+  margin: 6px 0;
+}
+
+footer .rightSide ul li a {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 150%;
+  color: var(--gray-scale-gray-–-400);
+  transition: 0.2s;
+}
+
+footer .rightSide ul li a:hover,
+footer .rightSide ul li a:focus {
+  color: var(--gray-scale-white);
+}
+
+/* *Footer bottom Start Here */
+#copyRight {
+  padding: 24px 0px;
+}
+
+#copyRight p {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 150%;
+  color: var(--gray-scale-gray-–-500);
+}
+
+#copyRight a {
+  margin: 0 4px;
+}
+
+/* *Footer bottom End Hear */
+
+@media (max-width: 991.9px) {
+  /* *Footer Start Here */
+
+  footer #FooterTop {
+    padding: 60px 0 20px;
+  }
+  footer .rightSide ul h4 {
+    margin: 14px 0;
+  }
+  #copyRight {
+    padding: 0px 0px 100px;
+  }
+  #copyRight p {
+    padding: 10px 4px;
+  }
+  /* *Footer End Hear */
+  .orderSummery button {
+    width: 337px;
+  }
+  .formBox {
+    margin-bottom: 0;
+  }
+}
