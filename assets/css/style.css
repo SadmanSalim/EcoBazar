@@ -529,7 +529,7 @@ nav .middleNav ul li a {
   color: var(--gray-scale-gray-–-500);
   transition: 0.3s;
 }
-/* nav .middleNav ul li a:hover {
+/* nav .middleNav ul li a:first-child:hover {
   color: var(--branding-success);
 } */
 
