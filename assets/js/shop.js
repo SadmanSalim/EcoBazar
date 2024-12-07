@@ -161,4 +161,19 @@ $(document).ready(function () {
     }
   }
   // Price Range Slider Start Here
+  
+  
+  
+  // 404 Error Page Start Here
+    $(document).ready(function () {
+      $('#backToHome').click(function () {
+        // Replace 'index.html' with your home page URL or file name
+        window.location.href = 'index.html';
+      });
+    });
+  // 404 Error Page End Here
+
+  
+
+
 });

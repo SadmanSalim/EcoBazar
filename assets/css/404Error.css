@@ -685,142 +685,41 @@ nav .quickCall a {
 }
 
 /* *Breadcrumbs End Hear */
-.formBox {
-  margin-bottom: 80px;
-}
-.formBox h2 {
-  font-weight: 500;
-  font-size: 24px;
-  line-height: 150%;
-  color: var(--gray-scale-gray-–-900);
-  margin: 32px 0 20px;
-}
-.formBox form input,
-.formBox form textarea,
-.formBox form select {
-  width: 100%;
-  border: 1px solid var(--gray-scale-gray-–-100);
-  border-radius: 6px;
-  padding: 14px 16px;
-  outline: none;
-}
-.formBox form label {
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 150%;
-  color: var(--gray-scale-gray-–-900);
-  margin: 16px 0 8px;
-}
-.formBox form textarea {
-  height: 100px;
-}
-.different {
-  padding: 20px 16px 32px;
-  border-bottom: 1px solid var(--gray-scale-gray-–-100);
-}
-#differentAddress {
-  border: 1px solid var(--gray-scale-gray-–-200);
-  border-radius: 3px;
-  width: 20px;
-  height: 20px;
-  margin-right: 5px;
-}
-.formBox form .different label {
-  margin-top: 5px;
-}
 
-/* *Order Summery Start Here */
-.orderSummery {
-  border: 1px solid var(--gray-scale-gray-–-100);
-  border-radius: 8px;
-  padding: 24px;
-  margin: 24px 0;
+/* *Error Page Start Here */
+#errorImg .errorBox {
+  width: 612px;
+  margin: 80px auto;
 }
-.orderSummery h4 {
-  font-weight: 500;
-  font-size: 20px;
+#errorImg .errorBox h1 {
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 120%;
+  text-align: center;
   color: var(--gray-scale-gray-–-900);
+  margin-top: 32px;
 }
-.orderSummery .proName {
+#errorImg .errorBox p {
   font-weight: 400;
-  font-size: 14px;
-  color: var(--gray-scale-gray-–-900);
-}
-.orderSummery .proName span {
-  margin-left: 6px;
-  font-weight: 500;
-  font-size: 15px;
-}
-.orderSummery .orderCart .price {
-  font-weight: 500;
-  font-size: 14px;
-  color: var(--gray-scale-gray-–-900);
-}
-.orderCart {
-  width: 100%;
-  height: 60px;
-}
-.orderCart img {
-  width: 60px;
-  height: 60px;
-}
-.Subtotal,
-.Shipping {
-  border-bottom: 1px solid var(--gray-scale-gray-–-100);
-  padding: 12px 0;
-}
-.Total {
-  padding: 12px 0;
-}
-.Subtotal :first-child,
-.Shipping :first-child,
-.Total :first-child {
-  font-weight: 400;
-  font-size: 14px;
-  color: var(--gray-scale-gray-–-700);
-}
-.Subtotal :last-child,
-.Shipping :last-child,
-.Total :last-child {
-  font-weight: 600;
-  font-size: 14px;
-  color: var(--gray-scale-gray-–-900);
-}
-.Total :last-child {
-  font-weight: 600;
-  font-size: 18px;
-}
-.orderSummery h5 {
-  font-size: 20px;
-  margin: 12px 0 18px;
-}
-.Payment {
-  margin: 10px 0;
-}
-.Payment input {
-  width: 20px;
-  height: 20px;
-  margin-right: 6px;
-  cursor: pointer;
-}
-.Payment label {
-  cursor: pointer;
-}
-.orderSummery button {
-  border-radius: 43px;
-  padding: 16px 40px;
-  width: 376px;
-  height: 51px;
-  background: var(--branding-success);
-  font-weight: 600;
   font-size: 16px;
+  line-height: 150%;
+  text-align: center;
+  color: var(--gray-scale-gray-–-500);
+  margin: 20px 0 24px;
+}
+#errorImg .errorBox button {
+  font-weight: 600;
+  font-size: 14px;
   line-height: 120%;
   color: var(--gray-scale-white);
+  border-radius: 43px;
+  padding: 14px 32px;
+  background: var(--branding-success);
   outline: none;
   border: 0;
-  margin: 24px 0;
 }
-/* *Order Summery End Hear */
+/* *Error Page End Hear */
+
 /* *Footer Start Here */
 footer {
   width: 100%;
@@ -914,8 +813,13 @@ footer .rightSide ul li a:focus {
 /* *Footer bottom End Hear */
 
 @media (max-width: 991.9px) {
-  /* *Footer Start Here */
+  /* * Error Page Start Here */
+  #errorImg .errorBox {
+    width: 100%;
+  }
+  /* * Error Page End Hear */
 
+  /* *Footer Start Here */
   footer #FooterTop {
     padding: 60px 0 20px;
   }

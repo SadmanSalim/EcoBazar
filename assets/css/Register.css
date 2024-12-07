@@ -557,8 +557,7 @@ nav .middleNav .desktopChild {
   margin: 5px 0;
 }
 
-.desktopChild li:hover a{
-
+.desktopChild li:hover a {
   color: #fff;
 }
 .desktopChild li:hover {
@@ -956,3 +955,29 @@ footer .rightSide ul li a:focus {
 #middleBar .offcanvas nav {
   background: transparent;
 }
+
+/* *Responsive Start Here */
+@media (max-width: 991.9px) {
+  #newsLetter .middleSide .inputBox button {
+    width: 40%;
+  }
+  #newsLetter .middleSide .inputBox {
+    margin-top: 20px;
+  }
+  #newsLetter .right-side {
+    margin-top: 20px;
+  }
+
+  /* *Footer Start Here */
+  footer .rightSide ul h4 {
+    margin-top: 20px;
+  }
+  footer #FooterTop {
+    padding: 60px 0 0;
+  }
+  #copyRight p {
+    margin-bottom: 20px;
+  }
+  /* *Footer End Hear */
+}
+/* *Responsive End Hear */
