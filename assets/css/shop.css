@@ -1035,7 +1035,7 @@ input[type='range']::-webkit-slider-thumb {
 #saleProducts .seleCard {
   border: 1px solid var(--gray-scale-gray-–-100);
   border-radius: 6px;
-  width: 312px;
+  width: 100%;
   padding: 20px 12px;
   margin: 10px 0;
   transition: 0.3s;
@@ -1176,6 +1176,7 @@ input[type='range']::-webkit-slider-thumb {
   position: relative;
   overflow: hidden;
   margin: 8px;
+  display: inline-table;
 }
 
 #ProductCardBox .cart:hover {

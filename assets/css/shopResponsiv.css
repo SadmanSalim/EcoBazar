@@ -1,4 +1,8 @@
 @media (max-width: 991.9px) {
+  #saleProducts .seleCard {
+    width: 282px;
+  }
+
   #copyRight {
     padding: 0px 0px 100px;
   }
