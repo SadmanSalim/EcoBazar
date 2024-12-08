@@ -809,6 +809,7 @@ nav .quickCall a {
 /* *Featured Start */
 #features {
   transform: translateY(50%);
+  cursor: pointer;
 }
 #features .featureCnt .featureCard {
   padding: 40px;
