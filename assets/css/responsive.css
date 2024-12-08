@@ -225,6 +225,15 @@
   #details .formCnt .formd {
     margin-left: 10px;
   }
+  #latestNews{
+    transform: translateY(18%);
+  }
+  #video img{
+    transform: translateY(-85%);
+  }
+  #latestNews .newsCnt .text a{
+    padding-bottom: 5px;
+  }
 
 
 }

@@ -1,0 +1,31 @@
+@media (max-width: 991px) {
+    #cart .productHeading p {
+        padding: 5px 0;
+        font-size: 14px;
+    }
+
+    #cart .productCnt .quantity {
+        padding: 0px;
+    }
+
+    #cart .productCnt img {
+        width: 50%;
+    }
+
+    #cart .productCnt p {
+        font-size: 14px;
+        margin-left: 5px;
+    }
+
+    #cart .actionBtns button {
+        width: 100%;
+        margin: 10px 0;
+    }
+
+    /* cupon box */
+    #cupon .cupon .cuponCnt {
+        width: 100%;
+        height: 92px;
+    }
+
+}
