@@ -117,7 +117,7 @@ $(document).ready(function () {
     $("#all").removeClass("active");
   });
   // countdown
-  var countDownDate = new Date("Dec 12, 2024 00:00:00").getTime();
+  var countDownDate = new Date("Dec 9, 2024 06:00:00").getTime();
   var x = setInterval(function () {
     var now = new Date().getTime();
     var distance = countDownDate - now;
