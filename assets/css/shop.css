@@ -1406,7 +1406,7 @@ footer .rightSide ul li a:focus {
 
 @media (max-width: 991.9px) {
   #saleProducts .seleCard {
-    width: 282px;
+    width: 100%;
   }
 
   #copyRight {
