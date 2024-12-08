@@ -561,10 +561,10 @@ nav .middleNav .desktopChild {
 .desktopChild li {
   margin: 5px 0;
 }
-.desktopChild li:hover a{
+.desktopChild li:hover a {
   color: #fff;
 }
-.desktopChild li a:hover a{
+.desktopChild li a:hover a {
   color: #fff;
 }
 .desktopChild li:hover {
@@ -589,7 +589,50 @@ nav .quickCall a {
   line-height: 150%;
   color: var(--gray-scale-gray-–-900);
 }
+/* *Cart Sidebar Start */
+.cardProduct {
+  height: 80%;
+}
+.checkoutBtnBox {
+  height: 20%;
+}
 
+.cardQuantity {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  color: var(--gray-scale-gray-–-900);
+}
+.totalPrice {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 120%;
+  color: var(--gray-scale-gray-–-900);
+}
+.checkout {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 120%;
+  color: var(--gray-scale-white);
+  border-radius: 43px;
+  padding: 16px 40px;
+  width: 376px;
+  height: 51px;
+  background: var(--branding-success);
+  margin: 20px 0 15px;
+}
+.cart {
+  border-radius: 43px;
+  padding: 16px 40px;
+  width: 376px;
+  height: 51px;
+  background: rgba(86, 172, 89, 0.1);
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 120%;
+  color: var(--branding-success);
+}
+/* *Cart Sidebar End */
 /* *Nam Menu Desktop End */
 
 /* *Main Banner Start */
@@ -718,7 +761,8 @@ nav .quickCall a {
   object-fit: cover;
 }
 
-#banner .swiper-horizontal
+#banner
+  .swiper-horizontal
   > .swiper-pagination-bullets.swiper-pagination-bullets-dynamic
   .swiper-pagination-bullet,
 .swiper-pagination-horizontal.swiper-pagination-bullets.swiper-pagination-bullets-dynamic
@@ -876,6 +920,7 @@ nav .quickCall a {
   position: relative;
   overflow: hidden;
   /* margin: 8px; */
+  display: inline-table;
 }
 
 #ProductCardBox .cart:hover {
@@ -970,159 +1015,155 @@ nav .quickCall a {
 
 /* *Product  ENDS HERE */
 
-
-
 /* *Drinks  START HERE */
-#drinks{
+#drinks {
   padding: 100px 0;
 }
-#drinks .milk button{
+#drinks .milk button {
   border-radius: 43px;
-padding: 14px 32px;
-width: 162px;
-height: 45px;
-background: var(--gray-scale-white);
-font-family: var(--font-family);
-font-weight: 600;
-font-size: 14px;
-text-align: justify;
-color: var(--branding-success);
-border: none;
-outline: none;
-display: flex;
-justify-content: center;
-align-items: center;
+  padding: 14px 32px;
+  width: 162px;
+  height: 45px;
+  background: var(--gray-scale-white);
+  font-family: var(--font-family);
+  font-weight: 600;
+  font-size: 14px;
+  text-align: justify;
+  color: var(--branding-success);
+  border: none;
+  outline: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 #drinks .breakfast button,
-#drinks .softDrinks button{
+#drinks .softDrinks button {
   font-family: var(--font-family);
-font-weight: 600;
-font-size: 14px;
-line-height: 120%;
-color: var(--branding-success);
-border-radius: 43px;
-padding: 14px 32px;
-width: 162px;
-height: 45px;
-background: var(--gray-scale-white);
-border: none;
-outline: none;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 120%;
+  color: var(--branding-success);
+  border-radius: 43px;
+  padding: 14px 32px;
+  width: 162px;
+  height: 45px;
+  background: var(--gray-scale-white);
+  border: none;
+  outline: none;
 }
-#drinks .milk{
+#drinks .milk {
   background-image: url(../img/drink1.png);
   width: 424px;
   height: 255px;
 }
-#drinks .milk h4{
+#drinks .milk h4 {
   font-family: var(--font-family);
-font-weight: 600;
-font-size: 32px;
-text-align: justify;
-color: var(--gray-scale-white);
-margin: 60px 0 8px;
+  font-weight: 600;
+  font-size: 32px;
+  text-align: justify;
+  color: var(--gray-scale-white);
+  margin: 60px 0 8px;
 }
-#drinks .milk p{
+#drinks .milk p {
   font-family: var(--font-family);
-font-weight: 400;
-font-size: 14px;
-text-align: justify;
-color: rgba(255, 255, 255, 0.8);
-margin-bottom: 16px;
+  font-weight: 400;
+  font-size: 14px;
+  text-align: justify;
+  color: rgba(255, 255, 255, 0.8);
+  margin-bottom: 16px;
 }
-#drinks .milk p span{
+#drinks .milk p span {
   font-weight: 500;
-font-size: 20px;
-color: var(--gray-scale-white);
+  font-size: 20px;
+  color: var(--gray-scale-white);
 }
 #drinks .softDrinks h4,
-#drinks .breakfast h4{
+#drinks .breakfast h4 {
   font-family: var(--font-family);
-font-weight: 600;
-font-size: 32px;
-color: var(--gren-gray-scale-900);
-margin: 8px 0 20px;
+  font-weight: 600;
+  font-size: 32px;
+  color: var(--gren-gray-scale-900);
+  margin: 8px 0 20px;
 }
 #drinks .softDrinks p,
-#drinks .breakfast p{
+#drinks .breakfast p {
   font-family: var(--font-family);
-font-weight: 500;
-font-size: 14px;
-letter-spacing: 0.03em;
-text-transform: uppercase;
-color: var(--gren-gray-scale-900);
-margin-top: 46px;
+  font-weight: 500;
+  font-size: 14px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--gren-gray-scale-900);
+  margin-top: 46px;
 }
-#drinks .softDrinks{
+#drinks .softDrinks {
   background-image: url(../img/drink2.png);
   width: 424px;
   height: 255px;
   margin: 0 24px;
 }
-#drinks .breakfast{
+#drinks .breakfast {
   background-image: url(../img/drink3.png);
   width: 424px;
   height: 255px;
 }
 
-
 /* *Drinks  ENDS HERE */
-
 
 /* *BEst Deals  START HERE */
 
-#bestDeals{
+#bestDeals {
   background: #edf2ee;
   height: auto;
   padding-top: 40px;
 }
-#bestDeals .middleItems p{
+#bestDeals .middleItems p {
   font-family: var(--font-family);
-font-weight: 500;
-font-size: 16px;
-letter-spacing: 0.02em;
-text-transform: uppercase;
-text-align: center;
-color: var(--branding-success);
+  font-weight: 500;
+  font-size: 16px;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  text-align: center;
+  color: var(--branding-success);
 }
-#bestDeals .middleItems h2{
+#bestDeals .middleItems h2 {
   font-family: var(--font-family);
-font-weight: 600;
-font-size: 35px;
-text-align: center;
-color: var(--gren-gray-scale-900);
+  font-weight: 600;
+  font-size: 35px;
+  text-align: center;
+  color: var(--gren-gray-scale-900);
 }
-#bestDeals .middleItems button{
+#bestDeals .middleItems button {
   border-radius: 43px;
-padding: 16px 40px;
-width: 191px;
-height: 51px;
-background: var(--branding-success);
-font-family: var(--font-family);
-font-weight: 600;
-font-size: 16px;
-color: var(--gray-scale-white);
-border: none;
-outline: none;
-margin: 24px 0 0 0;
+  padding: 16px 40px;
+  width: 191px;
+  height: 51px;
+  background: var(--branding-success);
+  font-family: var(--font-family);
+  font-weight: 600;
+  font-size: 16px;
+  color: var(--gray-scale-white);
+  border: none;
+  outline: none;
+  margin: 24px 0 0 0;
 }
 
-#bestDeals .middleItems .countTime div{
+#bestDeals .middleItems .countTime div {
   border-radius: 6px;
-padding: 0px 8px;
-width: 96px;
-height: 96px;
-background: var(--gray-scale-white);
-margin: 0px 10px;
-padding-top: 10px;
+  padding: 0px 8px;
+  width: 96px;
+  height: 96px;
+  background: var(--gray-scale-white);
+  margin: 0px 10px;
+  padding-top: 10px;
 }
-#bestDeals .middleItems .countTime div p{
+#bestDeals .middleItems .countTime div p {
   font-family: var(--font-family);
-font-weight: 400;
-font-size: 32px;
-text-align: center;
-color: var(--branding-success);
+  font-weight: 400;
+  font-size: 32px;
+  text-align: center;
+  color: var(--branding-success);
 }
-#bestDeals .middleItems .countTime div span{
+#bestDeals .middleItems .countTime div span {
   font-family: var(--font-family);
   font-weight: 500;
   font-size: 14px;
@@ -1132,9 +1173,7 @@ color: var(--branding-success);
   color: var(--gren-gray-scale-500);
 }
 
-
 /* *BEst Deals  ENDS HERE */
-
 
 /* *Feature Product Swipper  START HERE */
 #featureProduct {
@@ -1159,34 +1198,32 @@ color: var(--branding-success);
   height: 100%;
   object-fit: cover;
 }
-#featureProduct .head{
+#featureProduct .head {
   font-family: var(--font-family);
-font-weight: 600;
-font-size: 40px;
-text-align: center;
-color: var(--gren-gray-scale-900);
-margin: 100px 0 20px;
+  font-weight: 600;
+  font-size: 40px;
+  text-align: center;
+  color: var(--gren-gray-scale-900);
+  margin: 100px 0 20px;
 }
 
 /* * Feature Product Swipper ENDS HERE */
 
-
-
 /* *Client Review  START HERE */
-#review{
+#review {
   background: #edf2ee;
   padding-bottom: 460px;
 }
-#review .head{
+#review .head {
   font-family: var(--font-family);
-font-weight: 600;
-font-size: 40px;
-text-align: center;
-color: var(--gren-gray-scale-900);
-padding-top: 100px;
-margin-bottom: 43px;
+  font-weight: 600;
+  font-size: 40px;
+  text-align: center;
+  color: var(--gren-gray-scale-900);
+  padding-top: 100px;
+  margin-bottom: 43px;
 }
-#review .reviewCnt{
+#review .reviewCnt {
   border: 1px solid var(--gray-scale-gray-–-100);
   border-radius: 10px;
   width: 424px;
@@ -1194,44 +1231,44 @@ margin-bottom: 43px;
   background: var(--gray-scale-white);
   margin: 0 12px;
 }
-#review .reviewCnt img{
+#review .reviewCnt img {
   margin: 32px 0 24px;
 }
-#review .reviewCnt p{
+#review .reviewCnt p {
   font-family: var(--font-family);
-font-weight: 400;
-font-size: 16px;
-color: var(--gren-gray-scale-600);
-width: 360px;
-margin: auto;
+  font-weight: 400;
+  font-size: 16px;
+  color: var(--gren-gray-scale-600);
+  width: 360px;
+  margin: auto;
 }
-#review .client p{
+#review .client p {
   font-family: var(--font-family);
-font-weight: 500;
-font-size: 16px;
-text-align: center;
-color: var(--gren-gray-scale-900);
-margin-top: 14px;
+  font-weight: 500;
+  font-size: 16px;
+  text-align: center;
+  color: var(--gren-gray-scale-900);
+  margin-top: 14px;
 }
-#review .client span{
+#review .client span {
   font-family: var(--font-family);
-font-weight: 400;
-font-size: 14px;
-text-align: center;
-color: var(--gren-gray-scale-500);
+  font-weight: 400;
+  font-size: 14px;
+  text-align: center;
+  color: var(--gren-gray-scale-500);
 }
 
 /* *Client Review  ENDS HERE */
 
 /* *Video   START HERE */
-#video img{
+#video img {
   transform: translateY(-50%);
   cursor: pointer;
 }
-#video{
+#video {
   position: relative;
 }
-#video video{
+#video video {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -1241,75 +1278,75 @@ color: var(--gren-gray-scale-500);
 /* *Video   ENDS HERE */
 
 /* *Latest News  START HERE */
-#latestNews{
+#latestNews {
   margin-top: -389px !important;
   transform: translateY(30%);
 }
-#latestNews .head{
+#latestNews .head {
   font-family: var(--font-family);
-font-weight: 600;
-font-size: 40px;
-text-align: center;
-color: var(--gren-gray-scale-900);
+  font-weight: 600;
+  font-size: 40px;
+  text-align: center;
+  color: var(--gren-gray-scale-900);
 }
-#latestNews .newsCnt{
+#latestNews .newsCnt {
   border-radius: 8px;
-width: 424px;
-height: 512px;
-background: var(--gray-scale-white);
-margin-top: 50px;
+  width: 424px;
+  height: 512px;
+  background: var(--gray-scale-white);
+  margin-top: 50px;
 }
 #latestNews .newsCnt .image {
   position: relative;
 }
-.date{
+.date {
   border-radius: 4px;
-padding: 6px 15px 10px 15px;
-width: 58px;
-height: 58px;
-background: var(--gray-scale-white);
-position: absolute;
-bottom: 10px;
-left: 40px;
+  padding: 6px 15px 10px 15px;
+  width: 58px;
+  height: 58px;
+  background: var(--gray-scale-white);
+  position: absolute;
+  bottom: 10px;
+  left: 40px;
 }
-.date p{
+.date p {
   font-family: var(--font-family);
-font-weight: 500;
-font-size: 15px;
-color: var(--gray-scale-gray-–-900);
+  font-weight: 500;
+  font-size: 15px;
+  color: var(--gray-scale-gray-–-900);
 }
-.date span{
+.date span {
   font-family: var(--font-family);
-font-weight: 500;
-font-size: 12px;
-letter-spacing: 0.03em;
-text-transform: uppercase;
-color: var(--gray-scale-gray-–-500);
+  font-weight: 500;
+  font-size: 12px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--gray-scale-gray-–-500);
 }
-#latestNews .newsCnt .text{
+#latestNews .newsCnt .text {
   margin-left: 24px;
   margin-top: 24px;
 }
-#latestNews .newsCnt .text p{
+#latestNews .newsCnt .text p {
   font-family: var(--font-family);
-font-weight: 500;
-font-size: 18px;
-color: var(--gren-gray-scale-900);
+  font-weight: 500;
+  font-size: 18px;
+  color: var(--gren-gray-scale-900);
 }
-#latestNews .newsCnt .text span{
+#latestNews .newsCnt .text span {
   font-family: var(--font-family);
-font-weight: 400;
-font-size: 14px;
-color: var(--gren-gray-scale-500);
-margin: 8px 0;
+  font-weight: 400;
+  font-size: 14px;
+  color: var(--gren-gray-scale-500);
+  margin: 8px 0;
 }
-#latestNews .newsCnt .text a{
+#latestNews .newsCnt .text a {
   display: block;
   font-family: var(--font-family);
-font-weight: 600;
-font-size: 16px;
-color: var(--branding-success);
-margin-top: 20px;
+  font-weight: 600;
+  font-size: 16px;
+  color: var(--branding-success);
+  margin-top: 20px;
 }
 
 /* *Latest News  ENDS HERE */
@@ -1374,9 +1411,9 @@ margin-top: 20px;
   background: var(--branding-success);
   font-weight: 600;
   font-size: 16px;
-display: flex;
-justify-content: center;
-align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   color: var(--gray-scale-white);
 }
 

@@ -21,9 +21,7 @@
    <!-- *Icon Cdn -->
 
    <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
-   <link rel="stylesheet" href="./assets/css/contact.css">
-   <link rel="stylesheet" href="./assets/css/registerRasponsiv.css">
-   <link rel="stylesheet" href="./assets/css/responsive.css">
+   <link rel="stylesheet" href="./assets/css/checkout.css">
 </head>
 
 <body>
@@ -94,7 +92,7 @@
                </div>
             </div>
          </div>
-         <!-- *Cart Sidebar Start -->
+         <!-- !Cart Sidebar Start -->
          <div class="offcanvas offcanvas-end" data-bs-scroll="true" tabindex="-1" id="cartSideBar"
             aria-labelledby="offcanvasWithBothOptionsLabel">
             <div class="offcanvas-header">
@@ -135,7 +133,7 @@
             </div>
          </div>
 
-         <!-- *Cart Sidebar End -->
+         <!-- *!Cart Sidebar End -->
       </section>
       <!-- *Middle Bar Section Desktop end -->
 
@@ -175,7 +173,7 @@
                   <li><a href="index.html">Home</a></li>
                   <li class="shopCollapse">
                      <div class="row align-items-center">
-                        <div class="col-6"><a href="#">Shop</a></div>
+                        <div class="col-6"><a href="shop.html">Shop</a></div>
                         <div class="col-6 text-end">
                            <iconify-icon icon="ep:arrow-right-bold"></iconify-icon>
                         </div>
@@ -204,9 +202,9 @@
                         <li><a href="#">Privacy Policy</a></li>
                      </ul>
                   </li>
-                  <li><a href="#">Blog</a></li>
-                  <li><a href="#">About Us</a></li>
-                  <li><a href="#">Contact Us</a></li>
+                  <li><a href="blog.html">Blog</a></li>
+                  <li><a href="about.html">About Us</a></li>
+                  <li><a href="contact.html">Contact Us</a></li>
                </ul>
             </div>
          </div>
@@ -284,7 +282,7 @@
          <nav class="d-none d-lg-block navBarDesktop">
             <div class="container">
                <div class="row align-items-center">
-                  <!-- <div class="col-3">
+                  <div class="col-3">
                      <div class="dropdown">
                         <button class="categoryDrop d-flex align-items-center justify-content-evenly" type="button"
                            data-bs-toggle="dropdown" aria-expanded="false">
@@ -301,8 +299,8 @@
                            <li><a class="dropdown-item" href="#">Stationeries</a></li>
                         </ul>
                      </div>
-                  </div> -->
-                  <div class="col-6 middleNav">
+                  </div>
+                  <div class="col-7 middleNav">
                      <ul class="d-flex align-items-center justify-content-start">
                         <li><a class="" href="index.html">Home</a></li>
                         <li class="desktopParent">
@@ -327,10 +325,10 @@
                         </li>
                         <li><a class="" href="blog.html">Blog</a></li>
                         <li><a class="" href="about.html">About Us</a></li>
-                        <li><a class="active" href="contact.html">Contact Us</a></li>
+                        <li><a class="" href="contact.html">Contact Us</a></li>
                      </ul>
                   </div>
-                  <div class="col-6 d-flex align-items-center justify-content-end quickCall">
+                  <div class="col-2 d-flex align-items-center quickCall">
                      <iconify-icon icon="ph:phone-call-light"></iconify-icon>
                      <a href="tel:219555-0114">(219) 555-0114</a>
                   </div>
@@ -342,126 +340,143 @@
    </header>
 
 
+   <main>
 
-    <!-- *Main Part  START HERE -->
-     <main>
-              <!-- *Breadcrumbs Start Here -->
+      <!-- *Breadcrumbs Start Here -->
       <section id="Breadcrumbs">
-        <div class="container">
-           <ul>
-              <li class="d-flex align-items-center">
-                 <a href="index.html" class="homeIcom">
-                    <iconify-icon icon="fluent:home-16-regular" width="20" height="22"></iconify-icon>
-                 </a>
-                 <iconify-icon icon="formkit:right" width="15" height="15" style="color: #999"></iconify-icon>
-              </li>
-              <li class="d-flex align-items-center">
-                 <a href="#" class="active">Contact Us</a>
-              </li>
-           </ul>
-        </div>
-     </section>
-     <!-- *Breadcrumbs End Hear -->
-
-
-    <!-- *Details fill Section start -->
-     <section id="details">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-4 col-12 leftSide">
-                    <div class="row">
-                        <div class="col-12">
-                            <div class="cntBox text-center">
-                                <img class="img-fluid" src="./assets/img/Map Pin.png" alt="">
-                                <p>2715 Ash Dr. San Jose, South Dakota 83475</p>
-                            </div>
-                        </div>
-                        <div class="col-12">
-                            <div class="cntBox text-center">
-                                <img class="img-fluid" src="./assets/img/Email.png" alt="">
-                                <a href="mailto:ecobazar@gmail.com" target="_blank">
-                                   <p>Proxy@gmail.com
-                                       Help.proxy@gmail.com</p>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="col-12">
-                            <div class="cntBox text-center">
-                                <img class="img-fluid" src="./assets/img/PhoneCall.png" alt="">
-                                <a href="tel:2195550114">
-                                   <p>(219) 555-0114</p>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-8 col-12 rightSide">
-                    <div class="formCnt">
-                        <div class="formd">
-                            <h4>Just Say Hello!</h4>
-                            <p>Do you fancy saying hi to me or you want to get started with your project and you need my help? Feel free to contact me.</p>
-                            <form action="">
-                                <div class="d-flex">
-                                    <input type="text" placeholder="Full Name">
-                                    <input type="email" placeholder="youremail@gmail.com">
-                                </div>
-                                <input class="sub" type="text" placeholder="Subject">
-                                <textarea name="" id="" placeholder="Message"></textarea>
-                                <button>Send Message</button>
-                            </form>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-     </section>
-     <!-- *Details fill Section end -->
-
-
-      <!-- *Map Section start -->
-     <section id="Map">
          <div class="container">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3689.8700197525127!2d91.83677857434643!3d22.35853624078379!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30ad277ab0cff8a7%3A0x13eb8ccef8a22dde!2sCreative%20IT%20Institute%2C%20Chattogram%20Branch!5e0!3m2!1sen!2sbd!4v1733474173038!5m2!1sen!2sbd" width="100%" height="400px" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <ul>
+               <li class="d-flex align-items-center">
+                  <a href="index.html" class="homeIcom">
+                     <iconify-icon icon="fluent:home-16-regular" width="20" height="22"></iconify-icon>
+                  </a>
+                  <iconify-icon icon="formkit:right" width="15" height="15" style="color: #999"></iconify-icon>
+               </li>
+               <li class="d-flex align-items-center">
+                  <a href="#">Cart</a>
+                  <iconify-icon icon="formkit:right" width="15" height="15" style="color: #999"></iconify-icon>
+               </li>
+               <li>
+                  <a href="#" class="active">Checkout</a>
+               </li>
+            </ul>
          </div>
-     </section>
-     <!-- *Map Section end -->
-      <!-- *Newsletter Start Here -->
-      <section id="newsLetter">
-         <div class="container">
-            <div class="row align-items-center">
-               <div class="col-lg-4 leftSide">
-                  <h2>Subcribe our Newsletter</h2>
-                  <p>Pellentesque eu nibh eget mauris congue mattis mattis nec tellus. Phasellus imperdiet elit eu
-                     magna.</p>
-               </div>
-               <div class="col-lg-5 middleSide">
-                  <form action="">
-                     <div class="d-flex inputBox">
-                        <input type="email" placeholder="Your email address">
-                        <button>Subscribe</button>
+      </section>
+      <!-- *Breadcrumbs End Hear -->
+
+      <div class="container">
+         <div class="row">
+            <div class="col-lg-8 col-12 ">
+               <div class="formBox">
+                  <h2>Billing Information</h2>
+                  <form>
+                     <div class="row">
+                        <div class="F-name col-lg col-12">
+                           <label for="F-name">First name</label>
+                           <input type="text" id="F-name" placeholder="First name">
+                        </div>
+                        <div class="L-name col-lg col-12">
+                           <label for="F-name">Last name</label>
+                           <input type="text" id="L-name" placeholder="Last name">
+                        </div>
+                        <div class="C-name col-lg col-12">
+                           <label for="C-name">Company Name (optional)</label>
+                           <input type="text" id="C-name" placeholder="Company Name">
+                        </div>
+                        <div class="address col-12">
+                           <label for="address">Street Address</label>
+                           <input type="text" id="address" placeholder="Street Address">
+                        </div>
+                        <div class="Country col-lg-4 col-12">
+                           <label for="Country">Country / Region</label>
+                           <select name="Country" id="Country">
+                              <option value="1">Select</option>
+                           </select>
+                        </div>
+                        <div class="States col-lg-4 col-12">
+                           <label for="States">States</label>
+
+                           <select name="States" id="States">
+                              <option value="1">Select</option>
+                           </select>
+                        </div>
+                        <div class="zipCode col-lg-4 col-12">
+                           <label for="zipCode">Zip Code</label>
+                           <input type="email" id="zipCode" placeholder="Zip Code">
+                        </div>
+                        <div class="email col-lg col-12">
+                           <label for="email">Email</label>
+                           <input type="email" id="email" placeholder="Email">
+                        </div>
+                        <div class="phone col-lg col-12">
+                           <label for="phone">Phone number</label>
+                           <input type="phone" id="phone" placeholder="Phone number">
+                        </div>
+                        <div class="different col-12 d-flex align-items-center">
+                           <input type="checkbox" id="differentAddress" placeholder="">
+                           <label for="differentAddress">Ship to a different address</label>
+                        </div>
+                        <h2>Additional Info</h2>
+                        <div class="textarea col-12">
+                           <label for="notes">Order Notes (Optional)</label>
+                           <textarea name="" id="notes"
+                              placeholder="Notes about your order, e.g. special notes for delivery"></textarea>
+                        </div>
                      </div>
                   </form>
                </div>
-               <div class="col-lg-3 right-side text-center text-lg-end">
-                  <a href="#" class="active">
-                     <iconify-icon icon="fontisto:facebook" width="25" height="20"></iconify-icon>
-                  </a>
-                  <a href="#">
-                     <iconify-icon icon="ri:twitter-fill" width="25" height="20"></iconify-icon>
-                  </a>
-                  <a href="#">
-                     <iconify-icon icon="nrk:some-pinterest" width="25" height="20"></iconify-icon>
-                  </a>
-                  <a href="#">
-                     <iconify-icon icon="iconoir:instagram" width="25" height="20"></iconify-icon>
-                  </a>
+            </div>
+            <div class="col-lg-4 col-12 ">
+               <div class="orderSummery">
+                  <h4>Order Summery</h4>
+                  <div class="row">
+                     <div class="orderCart d-flex align-items-center justify-content-between">
+                        <div class="imgAndname">
+                           <img class="img-fluid" src="./assets/img/product.png" alt="">
+                           <span class="proName">Green Capsicum <span>x5</span></span>
+                        </div>
+                        <span class="price">$70.00</span>
+                     </div>
+                     <div class="orderCart d-flex align-items-center justify-content-between">
+                        <div class="imgAndname">
+                           <img class="img-fluid" src="./assets/img/GreenApple.png" alt="">
+                           <span class="proName">Green Capsicum <span>x5</span></span>
+                        </div>
+                        <span class="price">$70.00</span>
+                     </div>
+                  </div>
+                  <div class="Subtotal d-flex align-items-center justify-content-between">
+                     <span>Subtotal:</span>
+                     <span>$84.00</span>
+                  </div>
+                  <div class="Shipping d-flex align-items-center justify-content-between">
+                     <span>Shipping:</span>
+                     <span>Free</span>
+                  </div>
+                  <div class="Total d-flex align-items-center justify-content-between">
+                     <span>Total:</span>
+                     <span>$84.00</span>
+                  </div>
+                  <h5>Payment Method</h5>
+                  <div class="d-flex Payment">
+                     <input type="radio" name="Payment" id="Cash" checked>
+                     <label for="Cash">Cash on Delivery</label>
+                  </div>
+                  <div class="d-flex Payment">
+                     <input type="radio" name="Payment" id="Paypal">
+                     <label for="Paypal">Paypal</label>
+                  </div>
+                  <div class="d-flex Payment">
+                     <input type="radio" name="Payment" id="amazonPay">
+                     <label for="amazonPay">Amazon Pay</label>
+                  </div>
+                  <button type="button">Place Order</button>
                </div>
             </div>
          </div>
-      </section>
-      <!-- *Newsletter End Hear -->
-
+      </div>
    </main>
+
    <!-- *Footer Start Here -->
    <footer>
       <!-- *Footer top Start Here -->
@@ -476,7 +491,7 @@
                      nec.
                   </p>
                   <span><a href="tel:555-0114">(219) 555-0114</a> or</span>
-                  <span><a href="#">Proxy@gmail.com</a></span>
+                  <span><a href="mailto:Proxy@gmail.com">Proxy@gmail.com</a></span>
                </div>
                <div class="col-lg-8 rightSide">
                   <div class="row">
@@ -544,13 +559,10 @@
       <!-- *copy Right End Hear -->
    </footer>
    <!-- *Footer End Hear -->
-    
-   <!-- *Main Part  START HERE -->
 
-
-   <script src="./assets/js/bootstrap.bundle.min.js"></script>
+   <script src=" ./assets/js/bootstrap.bundle.min.js"></script>
    <script src="./assets/js/jquery-3.7.1.min.js"></script>
-   <script src="./assets/js/shop.js"></script>
+   <script src="./assets/js/main.js"></script>
+</body>
 
-   </body>
-   </html>
+</html>
