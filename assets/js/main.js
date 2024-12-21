@@ -1,4 +1,5 @@
 $(document).ready(function () {
+  var mixer = mixitup('.feature');
   // Toggle submenu and icon
   $(".shopCollapse").click(function () {
     let submenu = $(this).find(".shopOpen");
