@@ -270,6 +270,7 @@
 }
 #review .reviewCnt {
   width: 267px;
+  margin: auto;
 }
 #review .reviewCnt p {
   font-size: 12px;
@@ -277,6 +278,7 @@
 }
 #latestNews .newsCnt {
   width: 286px;
+  margin: auto;
 }
 #latestNews .newsCnt .text p {
   font-size: 16px;

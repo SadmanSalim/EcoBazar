@@ -63,6 +63,10 @@ $(document).ready(function () {
       el: "#banner .swiper-pagination",
       dynamicBullets: true,
     },
+    loop: true,
+    autoplay: {
+      delay: 3000,
+    },
     navigation: {
       nextEl: '.swiper-button-next',
       prevEl: '.swiper-button-prev',
@@ -71,9 +75,14 @@ $(document).ready(function () {
   var swiper = new Swiper("#featureProduct .mySwiper", {
     slidesPerView: 5,
     spaceBetween: 10,
+    freeMode: true,
+    speed: 11000,
     pagination: {
        el: ".swiper-pagination",
        clickable: true,
+    },
+    autoplay: {
+      delay: 5000,
     },
     navigation: {
        nextEl: '.swiper-button-next',
