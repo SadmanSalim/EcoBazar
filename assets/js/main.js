@@ -1,5 +1,19 @@
 $(document).ready(function () {
-  var mixer = mixitup('.feature');
+  // Product Filtering Start
+  var $productFilter = $('.productFilter').isotope({
+    itemSelector: '.cart',
+    layoutMode: 'fitRows'   
+  });
+
+  $('.pdNavButtons').on('click', function() {
+    var selector = $(this).attr('data-filter');
+
+    $productFilter.isotope({ filter: selector });
+    $('.pdNavButtons').removeClass('active');
+    $(this).addClass('active');
+  });
+    // Product Filtering End
+
   // Toggle submenu and icon
   $(".shopCollapse").click(function () {
     let submenu = $(this).find(".shopOpen");
@@ -94,49 +108,17 @@ $(document).ready(function () {
     }, 2000);
   });
 
-  // category
+  // countdown Start Here
+  $('.countTime').countdown('2024/12/26', function(event) {
+    $('#days').html(event.strftime('%D'));  
+    $('#hours').html(event.strftime('%H'));   
+    $('#mins').html(event.strftime('%M'));    
+    $('#secs').html(event.strftime('%S'));    
+  });
+  
 
-  $(".fruitsBtn").click(function () {
-    $(".Vegetables").addClass("d-none");
-    $(".fruits").removeClass("d-none");
-    $(".fruitsBtn").addClass("active");
-    $("#all").removeClass("active");
-    $(".veg").removeClass("active");
-  });
-  $(".All").click(function () {
-    $(".fruits").removeClass("d-none");
-    $(".Vegetables").removeClass("d-none");
-    $(".fruitsBtn").removeClass("active");
-    $("#all").addClass("active");
-    $(".veg").removeClass("active");
-  });
-  $(".veg").click(function () {
-    $(".fruits").addClass("d-none");
-    $(".Vegetables").removeClass("d-none");
-    $(".fruitsBtn").removeClass("active");
-    $(".veg").addClass("active");
-    $("#all").removeClass("active");
-  });
-  // countdown
-  var countDownDate = new Date("Dec 9, 2024 18:00:00").getTime();
-  var x = setInterval(function () {
-    var now = new Date().getTime();
-    var distance = countDownDate - now;
-    var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-    var hours = Math.floor(
-      (distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)
-    );
-    var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-    var seconds = Math.floor((distance % (1000 * 60)) / 1000);
-
-    document.getElementById("days").innerHTML = days;
-    document.getElementById("hours").innerHTML = hours;
-    document.getElementById("mins").innerHTML = minutes;
-    document.getElementById("secs").innerHTML = seconds;
-  }, 1000);
-  $('#video .vid').click(function(){
-    console.log(1);
-    
-    $('#video-m').removeClass('d-none');
-  })
+  // video start here
+  new VenoBox({
+    selector: '.videoHome',
+});
 });
