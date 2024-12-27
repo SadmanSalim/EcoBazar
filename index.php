@@ -31,87 +31,57 @@
    <!-- *Body Part Start -->
    <main>
       <!-- *Banner Desktop Section start -->
-      <section id="banner" class="d-none d-lg-block">
-         <div class="continer">
-            <div class="swiper mySwiper">
-               <div class="swiper-wrapper">
-                  <div class="swiper-slide">
-                     <div class="row align-items-center">
-                        <div class="col-7 bannerImg">
-                           <img class="img-fluid" src="./assets/img/bgImage.png" alt="">
-                           <div class="discount">
-                              <div class="row">
-                                 <p>70%</p>
-                                 <span>OFF</span>
-                              </div>
-                           </div>
+      <?php
+// Connect to the database
+// Example PHP connection script with XAMPP's default settings
+$pdo = new PDO('mysql:host=localhost;dbname=eco', 'root', '');
+
+
+// Fetch banners
+$stmt = $pdo->query("SELECT * FROM banners");
+$banners = $stmt->fetchAll(PDO::FETCH_ASSOC);
+?>
+
+<section id="banner" class="d-none d-lg-block">
+    <div class="continer">
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+                <?php foreach ($banners as $banner): ?>
+                    <div class="swiper-slide">
+                        <div class="row align-items-center">
+                            <div class="col-7 bannerImg">
+                                <img class="img-fluid" src="uploads/<?php echo htmlspecialchars($banner['image_url']); ?>" alt="">
+                                <div class="discount">
+                                    <div class="row">
+                                        <p><?php echo htmlspecialchars($banner['discount_percentage']); ?>%</p>
+                                        <span>OFF</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-5 text-start bannerText">
+                                <p>Welcome to shopery</p>
+                                <h1><?php echo htmlspecialchars($banner['heading']); ?></h1>
+                                <span><?php echo htmlspecialchars($banner['description']); ?></span>
+                                <a href="<?php echo htmlspecialchars($banner['button_link']); ?>"><button>Shop Now <iconify-icon icon="mdi-light:arrow-right"></iconify-icon></button></a>
+                            </div>
                         </div>
-                        <div class="col-5 text-start bannerText">
-                           <p>Welcome to shopery</p>
-                           <h1>Fresh & Healthy
-                              Organic Food</h1>
-                           <span>Free shipping on all your order. we deliver, you enjoy</span>
-                           <a href="shop.html"><button>Shop Now <iconify-icon
-                                    icon="mdi-light:arrow-right"></iconify-icon></button></a>
-                        </div>
-                     </div>
-                  </div>
-                  <div class="swiper-slide">
-                     <div class="row align-items-center">
-                        <div class="col-7 bannerImg">
-                           <img class="img-fluid" src="./assets/img/bgImage1.png" alt="">
-                           <div class="discount">
-                              <div class="row">
-                                 <p>30%</p>
-                                 <span>OFF</span>
-                              </div>
-                           </div>
-                        </div>
-                        <div class="col-5 text-start bannerText">
-                           <p>Welcome to shopery</p>
-                           <h1>Fresh & Healthy
-                              Organic Food</h1>
-                           <span>Free shipping on all your order. we deliver, you enjoy</span>
-                           <a href="shop.html"><button>Shop Now <iconify-icon
-                                    icon="mdi-light:arrow-right"></iconify-icon></button></a>
-                        </div>
-                     </div>
-                  </div>
-                  <div class="swiper-slide">
-                     <div class="row align-items-center">
-                        <div class="col-7 bannerImg">
-                           <img class="img-fluid" src="./assets/img/bgImage.png" alt="">
-                           <div class="discount">
-                              <div class="row">
-                                 <p>70%</p>
-                                 <span>OFF</span>
-                              </div>
-                           </div>
-                        </div>
-                        <div class="col-5 text-start bannerText">
-                           <p>Welcome to shopery</p>
-                           <h1>Fresh & Healthy
-                              Organic Food</h1>
-                           <span>Free shipping on all your order. we deliver, you enjoy</span>
-                           <a href="shop.html"><button>Shop Now <iconify-icon
-                                    icon="mdi-light:arrow-right"></iconify-icon></button></a>
-                        </div>
-                     </div>
-                  </div>
-               </div>
-               <div class="swiper-pagination"></div>
-               <div class="swiper-button-next">
-                  <iconify-icon icon="mynaui:arrow-right"></iconify-icon>
-               </div>
-               <div class="swiper-button-prev">
-                  <iconify-icon icon="mynaui:arrow-left"></iconify-icon>
-               </div>
+                    </div>
+                <?php endforeach; ?>
             </div>
-         </div>
-         <div class="bgImages">
-            <img class="img-fluid" src="./assets/img/BG1.png" alt="">
-         </div>
-      </section>
+            <div class="swiper-pagination"></div>
+            <div class="swiper-button-next">
+                <iconify-icon icon="mynaui:arrow-right"></iconify-icon>
+            </div>
+            <div class="swiper-button-prev">
+                <iconify-icon icon="mynaui:arrow-left"></iconify-icon>
+            </div>
+        </div>
+    </div>
+    <div class="bgImages">
+        <img class="img-fluid" src="./assets/img/BG1.png" alt="">
+    </div>
+</section>
+
       <!-- *Banner Section end -->
 
       <!-- *Banner Mobile Section start -->
@@ -254,380 +224,146 @@
 
 
       <!-- *Product Section start -->
-      <section id="productMain">
-         <div class="container">
-            <div class="headers">
-               <h2>Introducing Our Products</h2>
-               <div class="navigation">
-                  <a type="button" data-filter="*" class="pdNavButtons active">All</a>
-                  <a type="button" data-filter=".VegetablesCard" class="pdNavButtons ">Vegetables</a>
-                  <a type="button" data-filter=".FruitCard" class="pdNavButtons ">Fruit</a>
-                  <a type="button" data-filter=".CookingCard" class="pdNavButtons ">Meat & Fish</a>
-                  <a type="button" href="shop.html" class="pdNavButtons ">View All</a>
-               </div>
+      <?php
+// Database connection setup
+$host = 'localhost';
+$dbname = 'eco';
+$username = 'root';
+$password = ''; // Your database password
+
+try {
+    $pdo = new PDO("mysql:host=$host;dbname=$dbname", $username, $password);
+    $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+} catch (PDOException $e) {
+    echo "Connection failed: " . $e->getMessage();
+    exit;
+}
+
+// Fetch products based on category filter
+$category_filter = isset($_GET['category']) ? $_GET['category'] : '*'; // Default to all products
+
+$query = "SELECT * FROM products";
+if ($category_filter != '*') {
+    $query .= " WHERE category = :category";
+}
+
+$stmt = $pdo->prepare($query);
+
+if ($category_filter != '*') {
+    $stmt->bindParam(':category', $category_filter);
+}
+
+$stmt->execute();
+$products = $stmt->fetchAll(PDO::FETCH_ASSOC);
+?>
+
+<section id="ProductCardBox">
+    <div class="container productFilter">
+        <?php foreach ($products as $product): ?>
+            <div class="cart <?= htmlspecialchars($product['category']) ?>Card">
+                <a href="#">
+                    <div class="imgBox">
+                        <img class="img-fluid" src="uploads/products/<?= htmlspecialchars($product['image_url']) ?>" alt="<?= htmlspecialchars($product['name']) ?>">
+                    </div>
+                    <div class="details">
+                        <a href="#"><?= htmlspecialchars($product['name']) ?></a>
+                        <div class="priceAndCard d-flex align-items-center justify-content-between">
+                            <div class="price">
+                                <span class="col-2">$<?= number_format($product['price'], 2) ?></span>
+                                <?php if ($product['old_price']): ?>
+                                    <span class="col-3 oldPrice">$<?= number_format($product['old_price'], 2) ?></span>
+                                <?php endif; ?>
+                            </div>
+                            <span class="text-end col-6 addCatdBtn">
+                                <iconify-icon icon="ph:handbag" width="20" height="20"></iconify-icon>
+                            </span>
+                        </div>
+                        <div class="review">
+                            <?php 
+                            // Display stars based on rating
+                            $rating = $product['rating'];
+                            $full_stars = floor($rating); // Full stars
+                            $half_star = ($rating - $full_stars) >= 0.5 ? true : false; // Half star
+                            $empty_stars = 5 - $full_stars - ($half_star ? 1 : 0); // Empty stars
+                            
+                            for ($i = 0; $i < $full_stars; $i++) {
+                                echo '<iconify-icon icon="twemoji:star" width="20" height="20"></iconify-icon>';
+                            }
+                            if ($half_star) {
+                                echo '<iconify-icon icon="twemoji:star-half" width="20" height="20"></iconify-icon>';
+                            }
+                            for ($i = 0; $i < $empty_stars; $i++) {
+                                echo '<iconify-icon icon="heroicons:star-20-solid" width="20" height="20" style="color: #b3b3b3"></iconify-icon>';
+                            }
+                            ?>
+                        </div>
+                    </div>
+                </a>
+
+                <div class="iconBox">
+                    <div class="Wishlist">
+                        <iconify-icon icon="meteor-icons:heart" width="20" height="20"></iconify-icon>
+                    </div>
+                    <div class="View">
+                        <iconify-icon icon="ant-design:eye-outlined" width="20" height="20"></iconify-icon>
+                    </div>
+                </div>
+
+                <!-- Label -->
+                <?php if ($product['stock_status'] === 'Out of Stock'): ?>
+                    <div class="label">
+                        <span>Out of Stock</span>
+                    </div>
+                <?php endif; ?>
             </div>
-         </div>
+        <?php endforeach; ?>
+    </div>
+</section>
 
 
-         <!-- Product start here -->
-         <section id="ProductCardBox">
-            <div class="container productFilter">
-               <div class="cart VegetablesCard">
-                  <a href="#">
-                     <div class="imgBox">
-                        <img class="img-fluid" src="./assets/img/Image.png" alt="">
-                     </div>
-                     <div class="details">
-                        <a href="#">Big Potatos</a>
-                        <div class="priceAndCard d-flex align-items-center justify-content-between">
-                           <div class="price">
-                              <span class="col-2">$14.99</span>
-                           </div>
-                           <span class="text-end col-6 addCatdBtn">
-                              <iconify-icon icon="ph:handbag" width="20" height="20"></iconify-icon>
-                           </span>
-                        </div>
-                        <div class="review">
-                           <iconify-icon icon="twemoji:star" width="20" height="20"></iconify-icon>
-                           <iconify-icon icon="twemoji:star" width="20" height="20"></iconify-icon>
-                           <iconify-icon icon="twemoji:star" width="20" height="20"></iconify-icon>
-                           <iconify-icon icon="twemoji:star" width="20" height="20"></iconify-icon>
-                           <iconify-icon icon="heroicons:star-20-solid" width="20" height="20"
-                              style="color: #b3b3b3"></iconify-icon>
-                        </div>
-                     </div>
-                  </a>
-
-                  <!-- *Hover Effect Start Here -->
-
-                  <div class="iconBox">
-                     <div class="Wishlist">
-                        <iconify-icon icon="meteor-icons:heart" width="20" height="20"></iconify-icon>
-                     </div>
-                     <div class="View">
-                        <iconify-icon icon="ant-design:eye-outlined" width="20" height="20"></iconify-icon>
-                     </div>
-                  </div>
-
-                  <!-- *Hover Effect End Here -->
-
-               </div>
-               <div class="cart VegetablesCard">
-                  <a href="#">
-                     <div class="imgBox">
-                        <img class="img-fluid" src="./assets/img/Chanise.png" alt="">
-                     </div>
-                     <div class="details">
-                        <a href="#">Chanise Cabbage</a>
-                        <div class="priceAndCard d-flex align-items-center justify-content-between">
-                           <div class="price">
-                              <span class="col-2">$14.99</span>
-                           </div>
-                           <span class="text-end col-6 addCatdBtn">
-                              <iconify-icon icon="ph:handbag" width="20" height="20"></iconify-icon>
-                           </span>
-                        </div>
-                        <div class="review">
-                           <iconify-icon icon="twemoji:star" width="20" height="20"></iconify-icon>
-                           <iconify-icon icon="twemoji:star" width="20" height="20"></iconify-icon>
-                           <iconify-icon icon="twemoji:star" width="20" height="20"></iconify-icon>
-                           <iconify-icon icon="twemoji:star" width="20" height="20"></iconify-icon>
-                           <iconify-icon icon="heroicons:star-20-solid" width="20" height="20"
-                              style="color: #b3b3b3"></iconify-icon>
-                        </div>
-                     </div>
-                  </a>
-
-                  <!-- *Hover Effect Start Here -->
-
-                  <div class="iconBox">
-                     <div class="Wishlist">
-                        <iconify-icon icon="meteor-icons:heart" width="20" height="20"></iconify-icon>
-                     </div>
-                     <div class="View">
-                        <iconify-icon icon="ant-design:eye-outlined" width="20" height="20"></iconify-icon>
-                     </div>
-                  </div>
-
-                  <!-- *Hover Effect End Here -->
-
-               </div>
-               <div class="cart FruitCard">
-                  <a href="#">
-                     <div class="imgBox">
-                        <img class="img-fluid" src="./assets/img/Ladies.png" alt="">
-                     </div>
-                     <div class="details">
-                        <a href="#">Ladies Finger</a>
-                        <div class="priceAndCard d-flex align-items-center justify-content-between">
-                           <div class="price">
-                              <span class="col-2">$14.99</span>
-                              <span class="col-3 oldPrice">$20.99</span>
-                           </div>
-                           <span class="text-end col-6 addCatdBtn">
-                              <iconify-icon icon="ph:handbag" width="20" height="20"></iconify-icon>
-                           </span>
-                        </div>
-                        <div class="review">
-                           <iconify-icon icon="twemoji:star" width="20" height="20"></iconify-icon>
-                           <iconify-icon icon="twemoji:star" width="20" height="20"></iconify-icon>
-                           <iconify-icon icon="twemoji:star" width="20" height="20"></iconify-icon>
-                           <iconify-icon icon="twemoji:star" width="20" height="20"></iconify-icon>
-                           <iconify-icon icon="heroicons:star-20-solid" width="20" height="20"
-                              style="color: #b3b3b3"></iconify-icon>
-                        </div>
-                     </div>
-                  </a>
-
-                  <!-- *Hover Effect Start Here -->
-
-                  <div class="iconBox">
-                     <div class="Wishlist">
-                        <iconify-icon icon="meteor-icons:heart" width="20" height="20"></iconify-icon>
-                     </div>
-                     <div class="View">
-                        <iconify-icon icon="ant-design:eye-outlined" width="20" height="20"></iconify-icon>
-                     </div>
-                  </div>
-
-                  <!-- *Hover Effect End Here -->
-
-                  <!-- *Label Start Here -->
-                  <div class="label">
-                     <span>Out of Stock</span>
-                  </div>
-                  <!-- *Label End Here -->
-
-
-               </div>
-               <div class="cart VegetablesCard">
-                  <a href="#">
-                     <div class="imgBox">
-                        <img class="img-fluid" src="./assets/img/Eggplant.png" alt="">
-                     </div>
-                     <div class="details">
-                        <a href="#">Eggplant</a>
-                        <div class="priceAndCard d-flex align-items-center justify-content-between">
-                           <div class="price">
-                              <span class="col-2">$14.99</span>
-                              <span class="col-3 oldPrice">$20.99</span>
-                           </div>
-                           <span class="text-end col-6 addCatdBtn">
-                              <iconify-icon icon="ph:handbag" width="20" height="20"></iconify-icon>
-                           </span>
-                        </div>
-                        <div class="review">
-                           <iconify-icon icon="twemoji:star" width="20" height="20"></iconify-icon>
-                           <iconify-icon icon="twemoji:star" width="20" height="20"></iconify-icon>
-                           <iconify-icon icon="twemoji:star" width="20" height="20"></iconify-icon>
-                           <iconify-icon icon="twemoji:star" width="20" height="20"></iconify-icon>
-                           <iconify-icon icon="heroicons:star-20-solid" width="20" height="20"
-                              style="color: #b3b3b3"></iconify-icon>
-                        </div>
-                     </div>
-                  </a>
-
-                  <!-- *Hover Effect Start Here -->
-
-                  <div class="iconBox">
-                     <div class="Wishlist">
-                        <iconify-icon icon="meteor-icons:heart" width="20" height="20"></iconify-icon>
-                     </div>
-                     <div class="View">
-                        <iconify-icon icon="ant-design:eye-outlined" width="20" height="20"></iconify-icon>
-                     </div>
-                  </div>
-
-                  <!-- *Hover Effect End Here -->
-
-               </div>
-               <div class="cart CookingCard">
-                  <a href="#">
-                     <div class="imgBox">
-                        <img class="img-fluid" src="./assets/img/Fresh.png" alt="">
-                     </div>
-                     <div class="details">
-                        <a href="#">Fresh Cauliflower</a>
-                        <div class="priceAndCard d-flex align-items-center justify-content-between">
-                           <div class="price">
-                              <span class="col-2">$14.99</span>
-                              <span class="col-3 oldPrice">$20.99</span>
-                           </div>
-                           <span class="text-end col-6 addCatdBtn">
-                              <iconify-icon icon="ph:handbag" width="20" height="20"></iconify-icon>
-                           </span>
-                        </div>
-                        <div class="review">
-                           <iconify-icon icon="twemoji:star" width="20" height="20"></iconify-icon>
-                           <iconify-icon icon="twemoji:star" width="20" height="20"></iconify-icon>
-                           <iconify-icon icon="twemoji:star" width="20" height="20"></iconify-icon>
-                           <iconify-icon icon="twemoji:star" width="20" height="20"></iconify-icon>
-                           <iconify-icon icon="heroicons:star-20-solid" width="20" height="20"
-                              style="color: #b3b3b3"></iconify-icon>
-                        </div>
-                     </div>
-                  </a>
-
-                  <!-- *Hover Effect Start Here -->
-
-                  <div class="iconBox">
-                     <div class="Wishlist">
-                        <iconify-icon icon="meteor-icons:heart" width="20" height="20"></iconify-icon>
-                     </div>
-                     <div class="View">
-                        <iconify-icon icon="ant-design:eye-outlined" width="20" height="20"></iconify-icon>
-                     </div>
-                  </div>
-
-                  <!-- *Hover Effect End Here -->
-
-               </div>
-               <div class="cart FruitCard">
-                  <a href="#">
-                     <div class="imgBox">
-                        <img class="img-fluid" src="./assets/img/GreenApple.png" alt="">
-                     </div>
-                     <div class="details">
-                        <a href="#">Green Apple</a>
-                        <div class="priceAndCard d-flex align-items-center justify-content-between">
-                           <div class="price">
-                              <span class="col-2">$14.99</span>
-                              <span class="col-3 oldPrice">$20.99</span>
-                           </div>
-                           <span class="text-end col-6 addCatdBtn">
-                              <iconify-icon icon="ph:handbag" width="20" height="20"></iconify-icon>
-                           </span>
-                        </div>
-                        <div class="review">
-                           <iconify-icon icon="twemoji:star" width="20" height="20"></iconify-icon>
-                           <iconify-icon icon="twemoji:star" width="20" height="20"></iconify-icon>
-                           <iconify-icon icon="twemoji:star" width="20" height="20"></iconify-icon>
-                           <iconify-icon icon="twemoji:star" width="20" height="20"></iconify-icon>
-                           <iconify-icon icon="heroicons:star-20-solid" width="20" height="20"
-                              style="color: #b3b3b3"></iconify-icon>
-                        </div>
-                     </div>
-                  </a>
-
-                  <!-- *Hover Effect Start Here -->
-
-                  <div class="iconBox">
-                     <div class="Wishlist">
-                        <iconify-icon icon="meteor-icons:heart" width="20" height="20"></iconify-icon>
-                     </div>
-                     <div class="View">
-                        <iconify-icon icon="ant-design:eye-outlined" width="20" height="20"></iconify-icon>
-                     </div>
-                  </div>
-
-                  <!-- *Hover Effect End Here -->
-
-               </div>
-               <div class="cart VegetablesCard">
-                  <a href="#">
-                     <div class="imgBox">
-                        <img class="img-fluid" src="./assets/img/GreenCapsicum.png" alt="">
-                     </div>
-                     <div class="details">
-                        <a href="#">Green Capsicum</a>
-                        <div class="priceAndCard d-flex align-items-center justify-content-between">
-                           <div class="price">
-                              <span class="col-2">$14.99</span>
-                              <span class="col-3 oldPrice">$20.99</span>
-                           </div>
-                           <span class="text-end col-6 addCatdBtn">
-                              <iconify-icon icon="ph:handbag" width="20" height="20"></iconify-icon>
-                           </span>
-                        </div>
-                        <div class="review">
-                           <iconify-icon icon="twemoji:star" width="20" height="20"></iconify-icon>
-                           <iconify-icon icon="twemoji:star" width="20" height="20"></iconify-icon>
-                           <iconify-icon icon="twemoji:star" width="20" height="20"></iconify-icon>
-                           <iconify-icon icon="twemoji:star" width="20" height="20"></iconify-icon>
-                           <iconify-icon icon="heroicons:star-20-solid" width="20" height="20"
-                              style="color: #b3b3b3"></iconify-icon>
-                        </div>
-                     </div>
-                  </a>
-
-                  <!-- *Hover Effect Start Here -->
-
-                  <div class="iconBox">
-                     <div class="Wishlist">
-                        <iconify-icon icon="meteor-icons:heart" width="20" height="20"></iconify-icon>
-                     </div>
-                     <div class="View">
-                        <iconify-icon icon="ant-design:eye-outlined" width="20" height="20"></iconify-icon>
-                     </div>
-                  </div>
-
-                  <!-- *Hover Effect End Here -->
-
-               </div>
-               <div class="cart VegetablesCard">
-                  <a href="#">
-                     <div class="imgBox">
-                        <img class="img-fluid" src="./assets/img/GreenChili.png" alt="">
-                     </div>
-                     <div class="details">
-                        <a href="#">Green Chili</a>
-                        <div class="priceAndCard d-flex align-items-center justify-content-between">
-                           <div class="price">
-                              <span class="col-2">$14.99</span>
-                              <span class="col-3 oldPrice">$20.99</span>
-                           </div>
-                           <span class="text-end col-6 addCatdBtn">
-                              <iconify-icon icon="ph:handbag" width="20" height="20"></iconify-icon>
-                           </span>
-                        </div>
-                        <div class="review">
-                           <iconify-icon icon="twemoji:star" width="20" height="20"></iconify-icon>
-                           <iconify-icon icon="twemoji:star" width="20" height="20"></iconify-icon>
-                           <iconify-icon icon="twemoji:star" width="20" height="20"></iconify-icon>
-                           <iconify-icon icon="twemoji:star" width="20" height="20"></iconify-icon>
-                           <iconify-icon icon="heroicons:star-20-solid" width="20" height="20"
-                              style="color: #b3b3b3"></iconify-icon>
-                        </div>
-                     </div>
-                  </a>
-
-                  <!-- *Hover Effect Start Here -->
-
-                  <div class="iconBox">
-                     <div class="Wishlist">
-                        <iconify-icon icon="meteor-icons:heart" width="20" height="20"></iconify-icon>
-                     </div>
-                     <div class="View">
-                        <iconify-icon icon="ant-design:eye-outlined" width="20" height="20"></iconify-icon>
-                     </div>
-                  </div>
-
-                  <!-- *Hover Effect End Here -->
-
-               </div>
-           </div>           
-         </section>
-      </section>
       <!-- product end here -->
       <!-- *Product Section end -->
 
 
       <!-- *Drinks Section start -->
-      <section id="drinks">
-         <div class="container">
-            <div class="row align-items-center">
-               <div class="col-lg-4 col-12">
-                  <a href="#"><img class="img-fluid" src="./assets/img/drinks1.png" alt=""></a>
-               </div>
-               <div class="col-lg-4 col-12 my-3 my-lg-0">
-                  <a href="#"><img class="img-fluid" src="./assets/img/drinks2.png" alt=""></a>
-               </div>
-               <div class="col-lg-4 col-12">
-                  <a href="#"><img class="img-fluid" src="./assets/img/drinks3.png" alt=""></a>
-               </div>
-            </div>
-         </div>
-      </section>
+      <?php
+// Database credentials
+$host = 'localhost'; // or '127.0.0.1'
+$dbname = 'eco'; // Replace with your database name
+$username = 'root'; // Replace with your MySQL username
+$password = ''; // Replace with your MySQL password (empty for default XAMPP setup)
+
+try {
+    // Establish the PDO connection
+    $pdo = new PDO("mysql:host=$host;dbname=$dbname", $username, $password);
+    // Set the PDO error mode to exception
+    $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+} catch (PDOException $e) {
+    // If connection fails, display error
+    echo "Connection failed: " . $e->getMessage();
+    exit;
+}
+
+// Fetch all drinks from the database
+$query = $pdo->prepare("SELECT * FROM drinks");
+$query->execute();
+$drinks = $query->fetchAll(PDO::FETCH_ASSOC);
+?>
+
+<section id="drinks">
+    <div class="container">
+        <div class="row align-items-center">
+            <?php foreach ($drinks as $drink): ?>
+                <div class="col-lg-4 col-12">
+                    <a href="<?= htmlspecialchars($drink['link']); ?>">
+                        <img class="img-fluid" src="uploads/<?= htmlspecialchars($drink['image_url']); ?>" alt="">
+                    </a>
+                </div>
+            <?php endforeach; ?>
+        </div>
+    </div>
+</section>
+
       <!-- *Drinks Section end -->
 
 

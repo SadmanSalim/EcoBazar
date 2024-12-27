@@ -1,4 +1,26 @@
 $(document).ready(function () {
+  // JavaScript for product filtering
+document.querySelectorAll('.pdNavButtons').forEach(button => {
+  button.addEventListener('click', function() {
+      const filter = this.getAttribute('data-filter');
+      
+      // Remove active class from all buttons
+      document.querySelectorAll('.pdNavButtons').forEach(btn => btn.classList.remove('active'));
+      
+      // Add active class to the clicked button
+      this.classList.add('active');
+      
+      // Filter products
+      document.querySelectorAll('.cart').forEach(product => {
+          if (filter === '*' || product.classList.contains(filter)) {
+              product.style.display = 'block';
+          } else {
+              product.style.display = 'none';
+          }
+      });
+  });
+});
+
   // Product Filtering Start
   var $productFilter = $('.productFilter').isotope({
     itemSelector: '.cart',
