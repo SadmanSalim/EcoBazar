@@ -102,7 +102,7 @@ $banners = $stmt->fetchAll(PDO::FETCH_ASSOC);
         <label>Description: </label><textarea class="form-control" name="description" required></textarea><br>
         <label>Button Link: </label><input class="form-control" type="url" name="button_link" required><br>
         <button class="btn btn-primary" type="submit">Upload Banner</button>
-        <a class="btn btn-danger" href="index.php">Home</a>
+        <a class="btn btn-danger" href="index.html">Home</a>
     </form>
 </div>
 

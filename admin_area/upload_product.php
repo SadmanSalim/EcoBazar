@@ -71,6 +71,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['rating'])) {
 }
 ?>
 
+
 <!-- HTML Form to upload a new product -->
 <form method="POST" enctype="multipart/form-data">
     <label for="name">Product Name</label><br>

@@ -99,6 +99,6 @@ foreach ($banners as $banner) {
         <label>Image: </label><input class="form-control" type="file" name="image" required><br>
         <label>Link: </label><input class="form-control" type="url" name="link" required><br>
         <button type="submit" class="btn btn-primary">Upload Drink</button>
-        <a class="btn btn-danger" href="index.php">Home</a>
+        <a class="btn btn-danger" href="index.html">Home</a>
     </form>
 </div>
